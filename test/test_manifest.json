@@ -1561,6 +1561,13 @@
        "lastPage": 1,
        "type": "eq"
     },
+    {  "id": "multiple-filters-length-zero",
+       "file": "pdfs/multiple-filters-length-zero.pdf",
+       "md5": "c273c3a6fb79cbf3034fe1b62b204728",
+       "rounds": 1,
+       "link": false,
+       "type": "eq"
+    },
     {  "id": "issue5752",
        "file": "pdfs/issue5752.pdf",
        "md5": "aa20ad7cff71e9481c0cd623ddbff3b7",
@@ -3229,6 +3236,20 @@
     {  "id": "annotation-text-widget-forms",
        "file": "pdfs/annotation-text-widget.pdf",
        "md5": "b7b8923a12998fca8603fae53f73f19b",
+       "rounds": 1,
+       "type": "eq",
+       "forms": true
+    },
+    {  "id": "annotation-choice-widget-annotations",
+       "file": "pdfs/annotation-choice-widget.pdf",
+       "md5": "7dfb0d743a0da0f4a71b209ab43b0be5",
+       "rounds": 1,
+       "type": "eq",
+       "annotations": true
+    },
+    {  "id": "annotation-choice-widget-forms",
+       "file": "pdfs/annotation-choice-widget.pdf",
+       "md5": "7dfb0d743a0da0f4a71b209ab43b0be5",
        "rounds": 1,
        "type": "eq",
        "forms": true
