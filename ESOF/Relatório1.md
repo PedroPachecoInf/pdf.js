@@ -16,3 +16,8 @@ que toca às plataformas que visualizam e criam PDFs na Web. Desta forma torna-s
 Atualmente o PDF.js funciona de forma estável apenas no Firefox,Chrome e Opera. Apesar de estes browsers serem usados por grande parte das pessoas, usuários, por exemplo, do Safari, não têm acesso a todas as funcionalidades do programa, ou estas têm defeitos. Sendo assim, uma das prioridades no desenvolvimento do projeto seria tornar o PDF.js suportado por praticamente todos os browsers.
 
 Por outro lado, o facto de o PDF.js estar implementado em vários browsers cria diferentes tipos de bugs, dado que cada browser tem as suas especificidades e é necessário adapatar o programa a cada um. Desta forma, o aperfeiçoamento do projeto será mais complicado e demoroso.
+
+Durante o desenvolvimento do projeto, é aconselhado aos programadores que sigam certas convenções em termos de "estilo de escrita". Este estilo define que a indentação é de 2 espaços,
+as chavetas ficam na mesma linha que o respetivo 'if', 'for' ou 'while'. A definição deste estilo universal permite que o código tenha sempre uma estrutura idêntica, tornando o código
+mais legível.
+
