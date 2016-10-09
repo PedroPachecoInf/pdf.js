@@ -9,7 +9,24 @@ O projeto open-source escolhido para ser abordado ao longo da cadeira de Engenha
 O PDF.js é um visualizador de Portable Document Format (PDF), construído sobre o HTML5, com o propósito de criar um standard no 
 que toca às plataformas que visualizam e criam PDFs na Web. Desta forma torna-se muito mais prática e rápida a leitura de PDFs, dado que não é necessário o download do mesmo.
 
-##Desenvolvimento do Projeto
+##Processo de desenvolvimento
+
+###Software open-source
+
+Um projeto open-source parte de uma ideia, que um ou mais programadores implementam, criando uma base de desenvolvimento. Quando esse protótipo é libertado para o público, a comunidade vai maturando-o e aperfeiçoando-o, segundo as necessidades que surgem. Passado um certo período de tempo, a ideia inicial torna-se um projeto robusto, pronto a ser usado sem problemas.
+
+A utilização de sistemas de controlo de versão como o Git, permitiu que a colaboração em open-source fosse facilitada e atraísse uma audiência mais alargada, que, consequentemente, precisa de maior controlo nas suas contribuições.
+
+Assim, para a grande maioria dos projetos open-source é aplicada a metodologia do desenvolvimento ágil (*agile development*) de software.
+
+####Desenvolvimento ágil
+
+Os métodos de desenvolvimento de software podem ter uma abordagem adaptativa ou preditiva. O desenvolvimento ágil foca-se na adaptação de problemas em detrimento da previsão. Isto porque anos de experiência levaram as empresas a perceber que é mais complicado prever uma mudança nos requerimentos da aplicação e precaver-se contra ela, do que esperar que ela ocorra e depois desenvolver a partir dela. 
+
+###PDF.js
+
+
+
 
 ##Problemas/Opiniões
 
