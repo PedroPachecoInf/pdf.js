@@ -24,8 +24,7 @@ Os métodos de desenvolvimento de software podem ter uma abordagem adaptativa ou
 
 O modelo ágil, por se basear em iterações curtas e em lançamentos de várias versões funcionais, permite que, à medida que se vai desenvolvendo, o *feedback* do cliente contribua para um software adaptado aos seus requerimentos, sem que haja desperdício de recursos em funcionalidades que não interessariam ao cliente.
 
-![Alt text](Agile Development vs Planned Development)
-<img src="https://raw.githubusercontent.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%201%20-%20Agil%20vs%20Planned.svg">
+<img src="https://raw.githubusercontent.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%201%20-%20Agil%20vs%20Planned.png" alt = "Planned vs Agile development">
 
 #### Programação Extrema
 
