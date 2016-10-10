@@ -22,7 +22,10 @@ Assim, para a grande maioria dos projetos open-source é aplicada a metodologia 
 
 Os métodos de desenvolvimento de software podem ter uma abordagem adaptativa ou preditiva. O desenvolvimento ágil foca-se na adaptação a problemas em detrimento da previsão. Isto porque anos de experiência levaram as empresas a perceber que é mais complicado prever uma mudança nos requerimentos da aplicação e precaver-se contra ela, do que esperar que ela ocorra e depois desenvolver a partir dela.
 
-O modelo ágil 
+O modelo ágil, por se basear em iterações curtas e em lançamentos de várias versões funcionais, permite que, à medida que se vai desenvolvendo, o *feedback* do cliente contribua para um software adaptado aos seus requerimentos, sem que haja desperdício de recursos em funcionalidades que não interessariam ao cliente.
+
+![Alt text](Agile Development vs Planned Development)
+<img src="https://github.com/PedroPachecoInf/pdf.js/blob/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%201%20-%20Agil%20vs%20Planned.svg">
 
 #### Programação Extrema
 
