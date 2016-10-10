@@ -47,6 +47,10 @@ Atualmente o PDF.js funciona de forma estável apenas no Firefox,Chrome e Opera.
 
 Por outro lado, o facto de o PDF.js estar implementado em vários browsers cria diferentes tipos de bugs, dado que cada browser tem as suas especificidades e é necessário adapatar o programa a cada um. Desta forma, o aperfeiçoamento do projeto será mais complicado e demoroso.
 
-Durante o desenvolvimento do projeto, é aconselhado aos programadores que sigam certas convenções em termos de "estilo de escrita". Este estilo define que a indentação é de 2 espaços, as chavetas ficam na mesma linha que o respetivo 'if', 'for' ou 'while'. A definição deste estilo universal permite que o código tenha sempre uma estrutura idêntica, tornando o código
-mais legível.
+Durante o desenvolvimento do projeto, é aconselhado aos programadores que sigam certas convenções em termos de "estilo de escrita". Este estilo define que a indentação é de 2 espaços, as chavetas ficam na mesma linha que o respetivo 'if', 'for' ou 'while'. A definição deste estilo universal permite que o código tenha sempre uma estrutura idêntica, tornando o código mais legível.
 
+##Processos Alternativos
+
+Existem diversos processos de desenvolvimento que poderiam ter sido usados para desenvolver este projecto.
+
+O processo "Waterfall" é uma das alternativas possíveis. Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fase depende da terminação da anterior, este processo permite coordenar melhor o desensolvimento. No entanto, este método não seria uma boa escolha pois não permite combater facilmente mudanças relacionadas com as fases já terminadas do projecto. Além disso, sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos. 
