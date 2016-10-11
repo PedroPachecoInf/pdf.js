@@ -39,7 +39,7 @@ Neste plano, em vez de a mudança do software ser imposta por um "cliente", é i
 
 ## Processo de desenvolvimento do *pdf.js*
 
-<img src = "C:\0-Repos\GitHub\0-FEUP\ESOF\pdf.js ESOF\ESOF\Relatório 1 - Esquemas\Esquema 2 - Evolução de um projeto open-source.png" alt = "Evolução de um projeto open-source">
+<img src = "https://cdn.rawgit.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%202%20-%20Evolu%C3%A7%C3%A3o%20de%20um%20projeto%20open-source.png" alt = "Evolução de um projeto open-source">
 
 O pdf.js, como projeto open-source, segue um modelo de desenvolvimento ágil que partilha características com o Extreme Programming. 
 
@@ -65,4 +65,10 @@ Existem diversos processos de desenvolvimento que poderiam ter sido usados para 
 
 ### Waterfall
 
-O processo *Waterfall* é uma das alternativas possíveis. Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fase depende da terminação da anterior, este processo permite coordenar melhor o desensolvimento. No entanto, este método não seria uma boa escolha pois não permite combater facilmente mudanças relacionadas com as fases já terminadas do projecto. Além disso, sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos. 
+O tradicional processo *Waterfall* é uma das alternativas possíveis ao *agile development*. 
+
+Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fase depende da terminação da anterior, este processo permite coordenar e planear melhor o desenvolvimento. Além disso, por ser produto de planeamento, será superior a nível de documentação de código.
+
+No entanto, este método não seria uma boa escolha pois não permite combater facilmente mudanças relacionadas com as fases já terminadas do projecto. Além disso, sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos. 
+
+
