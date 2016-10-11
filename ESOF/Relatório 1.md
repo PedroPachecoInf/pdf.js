@@ -73,14 +73,29 @@ Desta forma, iremos sugerir processos alternativos que cubram as lacunas do mét
 
 Existem diversos processos de desenvolvimento que poderiam ter sido usados para desenvolver este projecto.
 
-### Waterfall
+### Modelo em cascata (*Waterfall*)
 
 O tradicional processo *Waterfall* é uma das alternativas possíveis ao *agile development*. 
 
-Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fase depende da terminação da anterior, este processo permite coordenar e planear melhor o desenvolvimento. Além disso, por ser produto de planeamento, será superior a nível de documentação de código.
+Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fase depende da terminação da anterior, este processo permite coordenar e planear melhor o desenvolvimento.
+.
 
-No entanto, este método não seria uma boa escolha pois não permite combater facilmente mudanças relacionadas com as fases já terminadas do projecto. Além disso, sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos. 
+#### Vantagens
 
+- O planeamento e a sequência bem definida de etapas garantem qualidade e manutenção apropriadas.
+- A estruturação permite que seja elaborada uma boa documentação de código, para uma utilização posterior.
+- Para projetos com requisitos bem definidos, é a abordagem que garante maior qualidade.
+
+
+#### Desvantagens
+
+- É um processo linear, que raramente permite retroceder numa determinada fase sem um custo elevado.
+- Dependendo dos prazos, as últimas etapas podem receber pouca atenção, diminuindo a qualidade do software.
+- Tem dificuldade em responder a mudanças, que aumenta à medida que o projeto avança.
+- Erros críticos podem só ser descobertos no final, quando ocorre a fase de testes.  
+
+
+A abordagem ágil foi desenvolvida para colmatar as falhas da metodologia em cascata, que, por ser linear, possui um elevado risco de desperdício de recursos. Sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos.
 
 ###Incremental
 
@@ -97,3 +112,25 @@ O processo *RAD* é outra alternativa.
 Este processo é semelhante ao *Agile* no sentido em que permite um grande contacto com os utilizadores desde o início, permitindo descobrir e tratar problemas nas fases iniciais do desenvolvimento. Este processo produz iterativamente software funcional, consistindo em pequenos ciclos de desenvolvimento, nos quais se aplica o processo *Waterfall*.
 
 Este processo seria uma boa alternativa se este projecto fosse desenvolvida por uma equipa estável. No entanto, sendo este um projecto oper-source, a utilização deste processo limitaria capacidade de a comunidade ajudar no desenvolvimento.
+
+### *Prototyping*
+
+
+
+### Modelo em espiral 
+
+O desenvolvimento em modo ágil é uma variação do modelo em espiral. 
+
+## Referências
+
+I. Sommerville, *Software Engineering (9th edition)*, Addison-Wesley, 2009
+
+[https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/XLC/Downloads/SelectingDevelopmentApproach.pdf]() - Consultado em Outubro de 2016
+
+[http://www.agile-process.org/]() - Consultado em Outubro de 2016
+
+[http://www.extremeprogramming.org/]() - Consultado em Outubro de 2016
+
+[http://www.agilenutshell.com/agile_vs_waterfall]() - Consultado em Outubro de 2016
+
+[https://en.wikipedia.org/wiki/Software_development_process]() - Consultado em Outubro de 2016
