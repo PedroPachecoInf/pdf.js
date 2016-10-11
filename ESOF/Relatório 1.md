@@ -89,3 +89,11 @@ O processo de desenvolvimento Incremental é também uma alternativa visto que c
 Através do desenvolvimento de pequenos *Waterfall* para diferentes módulos do projeto, conseguimos controlar a estrutura destes mesmos módulos e ainda assim conseguir alguma flexibilidade para efetuar alterações.
 
 Este modelo é uma boa escolha para projetos grandes como este visto que permite que os recursos humanos sejam mais facilmente divididos, algo que se revela particularmente útil no que toca à integração nos variados browsers. No entanto, traz também desvantagens no que toca a relacionar os vários módulos, o que exige um contolo bastante exigente nesta fase.
+
+### RAD
+
+O processo *RAD* é outra alternativa.
+
+Este processo é semelhante ao *Agile* no sentido em que permite um grande contacto com os utilizadores desde o início, permitindo descobrir e tratar problemas nas fases iniciais do desenvolvimento. Este processo produz iterativamente software funcional, consistindo em pequenos ciclos de desenvolvimento, nos quais se aplica o processo *Waterfall*.
+
+Este processo seria uma boa alternativa se este projecto fosse desenvolvida por uma equipa estável. No entanto, sendo este um projecto oper-source, a utilização deste processo limitaria capacidade de a comunidade ajudar no desenvolvimento.
