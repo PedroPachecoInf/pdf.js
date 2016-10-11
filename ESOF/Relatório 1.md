@@ -59,6 +59,16 @@ Por outro lado, o facto de o PDF.js estar implementado em vários browsers cria 
 
 Durante o desenvolvimento do projeto, é aconselhado aos programadores que sigam certas convenções em termos de "estilo de escrita". Este estilo define que a indentação é de 2 espaços, as chavetas ficam na mesma linha que o respetivo 'if', 'for' ou 'while'. A definição deste estilo universal permite que o código tenha sempre uma estrutura idêntica, tornando o código mais legível.
 
+Em relação ao método de desenvolvimento ágil, são muitas as críticas apontadas, entre as quais:
+
+- falta de estrutura e documentação necessárias.
+- somente trabalhar com desenvolvedores de nível sênior.
+- incorpora de forma insuficiente o projeto de software.
+- requer a adoção de muita mudança cultural.
+- poder levar a maiores dificuldades nas negociações contratuais.
+
+
+
 ## Processos alternativos
 
 Existem diversos processos de desenvolvimento que poderiam ter sido usados para desenvolver este projecto.
