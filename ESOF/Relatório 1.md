@@ -67,7 +67,7 @@ Em relação ao método de desenvolvimento ágil, são muitas as críticas apont
 - requer a adoção de muita mudança cultural.
 - poder levar a maiores dificuldades nas negociações contratuais.
 
-
+Desta forma, iremos sugerir processos alternativos que cubram as lacunas do método ágil e possam resultar num melhor rendimento no desenvolvimento do projeto.
 
 ## Processos alternativos
 
