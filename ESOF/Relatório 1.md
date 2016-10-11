@@ -82,3 +82,10 @@ Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fa
 No entanto, este método não seria uma boa escolha pois não permite combater facilmente mudanças relacionadas com as fases já terminadas do projecto. Além disso, sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos. 
 
 
+###Incremental
+
+O processo de desenvolvimento Incremental é também uma alternativa visto que combina desenvolvimento linear (mais típico de processos como *Waterfall*) e iterativo (como *Prototyping*).
+
+Através do desenvolvimento de pequenos *Waterfall* para diferentes módulos do projeto, conseguimos controlar a estrutura destes mesmos módulos e ainda assim conseguir alguma flexibilidade para efetuar alterações.
+
+Este modelo é uma boa escolha para projetos grandes como este visto que permite que os recursos humanos sejam mais facilmente divididos, algo que se revela particularmente útil no que toca à integração nos variados browsers. No entanto, traz também desvantagens no que toca a relacionar os vários módulos, o que exige um contolo bastante exigente nesta fase.
