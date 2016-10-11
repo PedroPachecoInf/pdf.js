@@ -16,7 +16,7 @@ Um projeto open-source parte de uma ideia, que um ou mais programadores implemen
 
 Os métodos de desenvolvimento de software podem ter uma abordagem adaptativa ou preditiva. O desenvolvimento ágil foca-se na adaptação a problemas em detrimento da sua previsão. Isto porque anos de experiência levaram as empresas a perceber que é mais complicado prever uma mudança nos requerimentos da aplicação e precaver-se contra ela, do que esperar que ela ocorra e depois desenvolver a partir dela.
 
-<img src = "https://raw.githubusercontent.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%201%20-%20Agil%20vs%20Planned.png" alt = "Planned vs Agile development" width = "500" height = "450" >
+<img src = "https://raw.githubusercontent.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%201%20-%20Agil%20vs%20Planned.png" alt = "Planned vs Agile development" width = "600" height = "450" >
 
 O modelo ágil, por se basear em iterações curtas e em lançamentos de várias versões funcionais, permite que, à medida que se vai desenvolvendo, o *feedback* do cliente contribua para um software adaptado aos seus requerimentos, sem que haja desperdício de recursos em funcionalidades que não interessariam ao cliente, nem em possíveis *bugs*.
 
@@ -39,6 +39,8 @@ Neste plano, em vez de a mudança do software ser imposta por um "cliente", é i
 
 ## Processo de desenvolvimento do *pdf.js*
 
+<img src = "C:\0-Repos\GitHub\0-FEUP\ESOF\pdf.js ESOF\ESOF\Relatório 1 - Esquemas\Esquema 2 - Evolução de um projeto open-source.png" alt = "Evolução de um projeto open-source">
+
 O pdf.js, como projeto open-source, segue um modelo de desenvolvimento ágil que partilha características com o Extreme Programming. 
 
 Todo o seu código-fonte encontra-se publicado no [repositório](https://github.com/mozilla/pdf.js) GitHub da Mozilla. Sendo a Mozilla uma marca do open-source, os seus projetos atraem uma maior audiência que sente maior confiança no sucesso do projeto. Este em particular conta com mais de 200 colaboradores. 
@@ -57,8 +59,10 @@ Por outro lado, o facto de o PDF.js estar implementado em vários browsers cria 
 
 Durante o desenvolvimento do projeto, é aconselhado aos programadores que sigam certas convenções em termos de "estilo de escrita". Este estilo define que a indentação é de 2 espaços, as chavetas ficam na mesma linha que o respetivo 'if', 'for' ou 'while'. A definição deste estilo universal permite que o código tenha sempre uma estrutura idêntica, tornando o código mais legível.
 
-##Processos alternativos
+## Processos alternativos
 
 Existem diversos processos de desenvolvimento que poderiam ter sido usados para desenvolver este projecto.
 
-O processo "Waterfall" é uma das alternativas possíveis. Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fase depende da terminação da anterior, este processo permite coordenar melhor o desensolvimento. No entanto, este método não seria uma boa escolha pois não permite combater facilmente mudanças relacionadas com as fases já terminadas do projecto. Além disso, sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos. 
+### Waterfall
+
+O processo *Waterfall* é uma das alternativas possíveis. Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fase depende da terminação da anterior, este processo permite coordenar melhor o desensolvimento. No entanto, este método não seria uma boa escolha pois não permite combater facilmente mudanças relacionadas com as fases já terminadas do projecto. Além disso, sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos. 
