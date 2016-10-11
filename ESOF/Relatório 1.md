@@ -37,7 +37,7 @@ Atualmente, o Git e, mais particularmente, o *hoster* de repositórios **GitHub*
 
 Neste plano, em vez de a mudança do software ser imposta por um "cliente", é incentivada pela comunidade online que, ao utilizar e modificar o programa, gera *feedback* suficiente para os *developers* alterarem e melhorarem as funcionalidades.
 
-## Processo de desenvolvimento do *pdf.js*
+## Processo de desenvolvimento do *pdf.js* --> falar de como funcionam os branches, como se aceita, etc **TO DO**
 
 <img src = "https://cdn.rawgit.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%202%20-%20Evolu%C3%A7%C3%A3o%20de%20um%20projeto%20open-source.png" alt = "Evolução de um projeto open-source">
 
@@ -69,7 +69,7 @@ Em relação ao método de desenvolvimento ágil, são muitas as críticas apont
 
 Desta forma, iremos sugerir processos alternativos que cubram as lacunas do método ágil e possam resultar num melhor rendimento no desenvolvimento do projeto.
 
-## Processos alternativos
+## Processos alternativos -> aqui temos de relacionar mais com o projeto. vant/desvant em relacao ao proj **TO DO**
 
 Existem diversos processos de desenvolvimento que poderiam ter sido usados para desenvolver este projecto.
 
@@ -111,9 +111,9 @@ O processo *RAD* é outra alternativa.
 
 Este processo é semelhante ao *Agile* no sentido em que permite um grande contacto com os utilizadores desde o início, permitindo descobrir e tratar problemas nas fases iniciais do desenvolvimento. Este processo produz iterativamente software funcional, consistindo em pequenos ciclos de desenvolvimento, nos quais se aplica o processo *Waterfall*.
 
-Este processo seria uma boa alternativa se este projecto fosse desenvolvida por uma equipa estável. No entanto, sendo este um projecto oper-source, a utilização deste processo limitaria capacidade de a comunidade ajudar no desenvolvimento.
+Este processo seria uma boa alternativa se este projecto fosse desenvolvida por uma equipa estável. No entanto, sendo este um projecto open-source, a utilização deste processo limitaria capacidade de a comunidade ajudar no desenvolvimento.
 
-### *Prototyping*
+### *Prototyping* -> **TO DO**
 
 
 
