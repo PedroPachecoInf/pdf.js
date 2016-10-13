@@ -69,7 +69,7 @@ Em relação ao método de desenvolvimento ágil, são muitas as críticas apont
 
 Desta forma, iremos sugerir processos alternativos que cubram as lacunas do método ágil e possam resultar num melhor rendimento no desenvolvimento do projeto.
 
-## Processos alternativos -> aqui temos de relacionar mais com o projeto. vant/desvant em relacao ao proj **TO DO**
+## Processos alternativos
 
 Existem diversos processos de desenvolvimento que poderiam ter sido usados para desenvolver este projecto.
 
@@ -95,15 +95,15 @@ Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fa
 - Erros críticos podem só ser descobertos no final, quando ocorre a fase de testes.  
 
 
-A abordagem ágil foi desenvolvida para colmatar as falhas da metodologia em cascata, que, por ser linear, possui um elevado risco de desperdício de recursos. Sendo este um projecto open-source, esta metedologia dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos.
+A abordagem ágil foi desenvolvida para colmatar as falhas da metodologia em cascata, que, por ser linear, possui um elevado risco de desperdício de recursos. Sendo este um projecto open-source, apesar de que esta metodologia traria uma qualidade e estrutura de código bastante melhor, por outro lado dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos.
 
-###Incremental
+### Incremental
 
 O processo de desenvolvimento Incremental é também uma alternativa visto que combina desenvolvimento linear (mais típico de processos como *Waterfall*) e iterativo (como *Prototyping*).
 
 Através do desenvolvimento de pequenos *Waterfall* para diferentes módulos do projeto, conseguimos controlar a estrutura destes mesmos módulos e ainda assim conseguir alguma flexibilidade para efetuar alterações.
 
-Este modelo é uma boa escolha para projetos grandes como este visto que permite que os recursos humanos sejam mais facilmente divididos, algo que se revela particularmente útil no que toca à integração nos variados browsers. No entanto, traz também desvantagens no que toca a relacionar os vários módulos, o que exige um contolo bastante exigente nesta fase.
+Este modelo é uma boa escolha para projetos grandes e open-source como este visto que permite que os recursos humanos sejam mais facilmente divididos, algo que se revela particularmente útil, por exemplo, no que toca à integração nos variados browsers. No entanto, traz também desvantagens no que toca a relacionar os vários módulos, o que exige um contolo bastante exigente nesta fase.
 
 ### RAD
 
@@ -117,7 +117,7 @@ Este processo seria uma boa alternativa se este projecto fosse desenvolvida por 
 
 
 
-### Modelo em espiral 
+### Modelo em espiral -> **TO DO*
 
 O desenvolvimento em modo ágil é uma variação do modelo em espiral. 
 
