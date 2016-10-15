@@ -123,9 +123,13 @@ Uma das maiores vantagens desta abordagem para este projeto consiste na facilida
 
 
 
-### Modelo em espiral -> **TO DO*
+### Modelo em espiral 
 
-O desenvolvimento em modo ágil é uma variação do modelo em espiral. 
+Este modelo tem como base a análise de riscos e planejamento que é realizado durante toda a evolução do desenvolvimento. Riscos são circunstâncias adversas que podem surgir durante o desenvolvimento de software impedindo o processo ou diminuindo a qualidade do produto. São exemplos de riscos: pessoas que abandonam a equipe de desenvolvimento, ferramentas que não podem ser utilizadas, falha em equipamentos usados no desenvolvimento ou que serão utilizados no produto final, etc. A identificação e o gerenciamento de riscos é hoje uma atividade importantíssima no desenvolvimento de software devido à imaturidade da área e à falta de conhecimento, técnicas e ferramentas adequadas.
+
+O modelo em espiral é então visto como uma boa alternativa ao modelo ágil, dado que este se preocupa com eventuais problemas que possam surgir durante o desenvolvimento do software e desta forma já não seria gasto tanto tempo a resolver esses tais precalços.
+
+
 
 ## Referências
 
