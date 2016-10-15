@@ -113,7 +113,13 @@ Este processo é semelhante ao *Agile* no sentido em que permite um grande conta
 
 Este processo seria uma boa alternativa se este projecto fosse desenvolvida por uma equipa estável. No entanto, sendo este um projecto open-source, a utilização deste processo limitaria capacidade de a comunidade ajudar no desenvolvimento.
 
-### *Prototyping* -> **TO DO**
+### *Prototyping*
+
+Não é um processo de desenvolvimento em si só, mas uma abordagem para lidar com partes especificas de um processo maior e mais tradicional (como os já aqui mencionados). Apesar de a maior parte dos protótipos serem feito com a expectativa de serem descartados,em alguns casos estes irão evoluir para integrar o próprio projeto principal.
+
+Uma das maiores vantagens desta abordagem para este projeto consiste na facilidade de inovar e na flexibilidade, visto que permite testar funcionalidades com maior pormenor e descobrir o que efetivamente faz falta no projeto. No entanto, isto também implicaria que o processo de aceitação dos *pull requests* fosse muito menos controlado, o que facilmente poderia declinar em má qualidade de código.
+
+
 
 
 
