@@ -134,7 +134,11 @@ Este modelo tem como base a análise de riscos e planejamento que é realizado d
 
 O modelo em espiral é então visto como uma boa alternativa ao modelo ágil, dado que este se preocupa com eventuais problemas que possam surgir durante o desenvolvimento do software e desta forma já não seria gasto tanto tempo a resolver esses tais precalços.
 
+## Contribuições
 
+Cada membro do nosso grupo contribuiu equititivamente para a elaboração deste relatório. No grande tema de desenvolvimento, em que abordámos a expansão open-source e a descrição, problemas e opiniões sobre pdf.js, todos colaborámos a reunir informação e a adicioná-la. 
+
+Para os modelos alternativos dividimos tarefas. O Pedro escreveu principalmente sobre o modelo em espiral, o Diogo sobre o *prototyping* e o modelo incremental, o João sobre o RAD e o José sobre o *Waterfall*.
 
 ## Referências
 
