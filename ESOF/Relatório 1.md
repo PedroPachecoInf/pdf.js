@@ -6,11 +6,11 @@
 O projeto open-source escolhido para ser abordado ao longo da cadeira de Engenharia de Software foi o 
 [**pdf.js**](https://github.com/mozilla/pdf.js), que a Mozilla alberga.
 
-O PDF.js é um visualizador de Portable Document Format (PDF), construído  em JavaScript sobre o HTML5, com o propósito de criar um standard no que toca às plataformas que visualizam e criam PDFs na Web. Desta forma torna-se muito mais prática e rápida a leitura de PDFs, dado que não é necessário o download do mesmo. 
+O PDF.js é um visualizador de Portable Document Format (PDF), construído  em JavaScript sobre o HTML5, com o propósito de criar um standard no que toca às plataformas que visualizam e criam PDFs na Web. Desta forma torna-se muito mais prática e rápida a leitura de PDFs, dado que não é necessário o download do ficheiro. 
 
 ## Processo de desenvolvimento em open-source
 
-Um projeto open-source parte de uma ideia, que um ou mais programadores implementam, criando uma base de desenvolvimento. Quando esse protótipo é libertado para o público, a comunidade vai maturando-o e aperfeiçoando-o, segundo as necessidades que surgem. Passado um certo período de tempo, a ideia inicial torna-se um projeto robusto, pronto a ser usado com poucos defeitos.
+Um projeto open-source parte de uma ideia, que um ou mais programadores implementam, criando uma base de desenvolvimento. Quando esse protótipo é libertado para o público, a comunidade vai maturando-o e aperfeiçoando-o, segundo um guião ou segundo as necessidades que surgem. Passado um certo período de tempo, a ideia inicial torna-se um projeto robusto, pronto a ser usado com poucos defeitos.
 
 #### Desenvolvimento ágil
 
@@ -18,7 +18,7 @@ Os métodos de desenvolvimento de software podem ter uma abordagem adaptativa ou
 
 <img src = "https://raw.githubusercontent.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%201%20-%20Agil%20vs%20Planned.png" alt = "Planned vs Agile development" width = "600" height = "450" >
 
-O modelo ágil, por se basear em iterações curtas e em lançamentos de várias versões funcionais, permite que, à medida que se vai desenvolvendo, o *feedback* do cliente contribua para um software adaptado aos seus requerimentos, sem que haja desperdício de recursos em funcionalidades que não interessariam ao cliente, nem em possíveis *bugs*.
+O modelo ágil, por se basear em iterações curtas e em lançamentos de várias versões funcionais, permite que, à medida que avança o desenvolvimento, o *feedback* do cliente contribua para um software adaptado aos seus requerimentos, sem que haja desperdício de recursos em funcionalidades que não interessariam ao cliente, nem em possíveis *bugs*.
 
 Um exemplo de uma metodologia ágil é o **Extreme Programming (XP)**, muito usada em projetos open-source, e que tem como pilares:
 - **comunicação**: permitir que os desenvolvedores conheçam a perspetiva do utilizador.
@@ -47,15 +47,15 @@ Todo o seu código-fonte encontra-se publicado no [repositório](https://github.
 
 O repositório tem uma pequena equipa de contribuidores principais que revê as contribuições e aceita-as ou rejeita-as. Estas contribuições têm de passar numa série de testes automatizados de verificação de sintaxe e de obedecer a certas convenções em termos de estilo de escrita, para facilitar a leitura e integração do código no repositório.
 
-Partindo de um código base, que serviu de núcleo da aplicação, foram sendo adicionados pequenos **incrementos** ao projeto, que contribuiam para a sua estabilidade e para a adição de uma ou outra funcionalidade. Estas adições são incentivadas ou realizadas por internautas que clonam o código e decidem modificá-lo ou utilizá-lo.
+Partindo de um código base criado por [Andreas Gal](https://en.wikipedia.org/wiki/Andreas_Gal), que serviu de núcleo da aplicação, foram sendo adicionados pequenos **incrementos** ao projeto, que contribuiam para a sua estabilidade e para a adição de uma ou outra funcionalidade. Estas adições são incentivadas ou realizadas por queixas ou sugestões de internautas que clonam o código e decidem utilizá-lo ou modificá-lo.
 
 <img src="https://cdn.rawgit.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%205%20-%20Evolu%C3%A7%C3%A3o%20do%20PDFjs.png" alt ="Evolução do pdf.js">
 
-No repositório que é partilhado no GitHub, há apenas uma *branch master*, mas a equipa que supervisiona o projeto mantém pelo menos outras duas *branches* ativas: uma para desenvolver o programa e outra para guardar as versões estáveis (*releases*).
+No repositório que é partilhado no GitHub, há apenas uma *branch master*. No entanto, pela evolução do repositório, pode-se concluir que a equipa que supervisiona o projeto mantém pelo menos outras duas *branches* ativas: uma para desenvolver o programa e outra para submeter as versões estáveis (*releases*).
 
 <img src = "https://rawgit.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%206%20-%20Branches.png" alt="Esquema GIT do pdf.js"  width = "350" height = "450">
 
-Quando são implementadas funcionalidades e arranjos suficientes, um dos *main developers* faz *release* de uma nova versão completamente funcional para o repositório. Neste momento, o pdf.js encontra-se relativamente estável, com intervalos de meses entre *releases*.
+Quando são implementadas funcionalidades e arranjos suficientes, um dos *main developers* faz *merge* de uma nova versão da *branch releases* para a *master*, pondo-a à disposição para ser utilizada. Neste momento, o pdf.js encontra-se relativamente estável, com intervalos de meses entre *releases*.
 
 ## Problemas e opiniões
 
@@ -68,7 +68,7 @@ Durante o desenvolvimento do projeto, é aconselhado aos programadores que sigam
 Em relação ao método de desenvolvimento ágil, são muitas as críticas apontadas, entre as quais:
 
 - falta de estrutura e documentação necessárias.
-- somente trabalhar com desenvolvedores de nível sênior.
+- somente trabalhar com desenvolvedores de nível sénior.
 - incorpora de forma insuficiente o projeto de software.
 - requer a adoção de muita mudança cultural.
 - poder levar a maiores dificuldades nas negociações contratuais.
@@ -100,23 +100,21 @@ Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fa
 - Erros críticos podem só ser descobertos no final, quando ocorre a fase de testes, enquanto no processo ágil o software é constantemente testado.
 
 
-A abordagem ágil foi desenvolvida para colmatar as falhas da metodologia em cascata, que, por ser linear, possui um elevado risco de desperdício de recursos. Sendo este um projecto open-source, apesar de que esta metodologia traria uma qualidade e estrutura de código bastante melhor, por outro lado dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos.
+A abordagem ágil foi desenvolvida para colmatar as falhas da metodologia em cascata, que, por ser linear, possui um elevado risco de desperdício de recursos. Sendo o pdf.js um projecto open-source, esta metodologia permitiria uma qualidade e estrutura de código superiores. Por outro lado, dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos.
 
 ### Incremental
 
 O processo de desenvolvimento Incremental é também uma alternativa visto que combina desenvolvimento linear (mais típico de processos como *Waterfall*) e iterativo (como *Prototyping*).
 
-Através do desenvolvimento de pequenos *Waterfall* para diferentes módulos do projeto, conseguimos controlar a estrutura destes mesmos módulos e ainda assim conseguir alguma flexibilidade para efetuar alterações.
+Através do desenvolvimento de pequenos modelos *Waterfall* para diferentes módulos do projeto, conseguimos controlar a estrutura destes mesmos módulos e ainda assim conseguir alguma flexibilidade para efetuar alterações.
 
 Este modelo é uma boa escolha para projetos grandes e open-source como este visto que permite que os recursos humanos são mais facilmente divididos, algo que se revela particularmente útil, por exemplo, no que toca à integração nos variados browsers. No entanto, traz também desvantagens no que toca a relacionar os vários módulos, o que exige um contolo bastante exigente nesta fase.
 
 ### RAD
 
-O processo *RAD* é outra alternativa.
+O processo *RAD* é semelhante ao *Agile* no sentido em que permite um grande contacto com os utilizadores desde o início, permitindo descobrir e tratar problemas nas fases iniciais do desenvolvimento. Este processo produz iterativamente software funcional, consistindo em pequenos ciclos de desenvolvimento, nos quais se aplica o processo *Waterfall*.
 
-Este processo é semelhante ao *Agile* no sentido em que permite um grande contacto com os utilizadores desde o início, permitindo descobrir e tratar problemas nas fases iniciais do desenvolvimento. Este processo produz iterativamente software funcional, consistindo em pequenos ciclos de desenvolvimento, nos quais se aplica o processo *Waterfall*.
-
-Este processo seria uma boa alternativa se este projecto fosse desenvolvida por uma equipa estável. No entanto, sendo este um projecto open-source, a utilização deste processo limitaria capacidade de a comunidade ajudar no desenvolvimento.
+Este processo seria uma boa alternativa se este projecto fosse desenvolvido por uma equipa estável. No entanto, sendo este um projecto open-source, a utilização deste processo limitaria capacidade de a comunidade ajudar no desenvolvimento.
 
 ### *Prototyping*
 
