@@ -37,7 +37,7 @@ Atualmente, o Git e, mais particularmente, o *hoster* de repositórios **GitHub*
 
 Neste plano, em vez de a mudança do software ser imposta por um "cliente", é incentivada pela comunidade online que, ao utilizar e modificar o programa, gera *feedback* suficiente para os *developers* alterarem e melhorarem as funcionalidades.
 
-## Processo de desenvolvimento do *pdf.js* --> falar de como funcionam os branches, como se aceita, etc **TO DO**
+## Processo de desenvolvimento do *pdf.js*
 
 <img src = "https://cdn.rawgit.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%202%20-%20Evolu%C3%A7%C3%A3o%20de%20um%20projeto%20open-source.png" alt = "Evolução de um projeto open-source">
 
@@ -48,6 +48,10 @@ Todo o seu código-fonte encontra-se publicado no [repositório](https://github.
 O repositório tem uma pequena equipa de contribuidores principais que revê as contribuições e aceita-as ou rejeita-as. Estas contribuições têm de passar numa série de testes automatizados de verificação de sintaxe e de obedecer a certas convenções em termos de estilo de escrita, para facilitar a leitura e integração do código no repositório.
 
 Partindo de um código base, que serviu de núcleo da aplicação, foram sendo adicionados pequenos **incrementos** ao projeto, que contribuiam para a sua estabilidade e para a adição de uma ou outra funcionalidade. Estas adições são incentivadas ou realizadas por internautas que clonam o código e decidem modificá-lo ou utilizá-lo.
+
+No repositório que é partilhado no GitHub, há apenas uma *branch master*, mas a equipa que supervisiona o projeto mantém pelo menos outras duas *branches* ativas: uma para desenvolver o programa e outra para guardar as versões estáveis (*releases*).
+
+<img src = "" alt = "Esquema GIT do pdf.js">
 
 Quando são implementadas funcionalidades e arranjos suficientes, um dos *main developers* faz *release* de uma nova versão completamente funcional para o repositório. Neste momento, o pdf.js encontra-se relativamente estável, com intervalos de meses entre *releases*.
 
@@ -82,8 +86,8 @@ Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fa
 
 #### Vantagens
 
-- O planeamento e a sequência bem definida de etapas garantem qualidade e manutenção apropriadas.
-- A estruturação permite que seja elaborada uma boa documentação de código, para uma utilização posterior.
+- O planeamento e a sequência bem definida de etapas garantem qualidade e manutenção apropriadas. Sendo o pdf.js um produto utilizado no Firefox, um dos *browsers* mais populares de hoje, é essencial que seja uma aplicação de qualidade.
+- A estruturação permite que seja elaborada uma boa documentação de código, para uma utilização posterior. Como o código de um projeto open-source é elaborado por uma grande diversidade de contribuidores, muitas vezes falta documentação para que a leitura do programa seja facilitada.
 - Para projetos com requisitos bem definidos, é a abordagem que garante maior qualidade.
 
 
@@ -91,8 +95,8 @@ Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fa
 
 - É um processo linear, que raramente permite retroceder numa determinada fase sem um custo elevado.
 - Dependendo dos prazos, as últimas etapas podem receber pouca atenção, diminuindo a qualidade do software.
-- Tem dificuldade em responder a mudanças, que aumenta à medida que o projeto avança.
-- Erros críticos podem só ser descobertos no final, quando ocorre a fase de testes.  
+- Tem dificuldade em responder a mudanças, que aumenta à medida que o projeto avança. O pdf.js, por ter sido desenvolvido ao longo de vários anos, teve de lidar com a mudança de requerimentos. Nomeadamente a introdução do HTML5, que teria sido muito custosa, não fosse a abordagem incremental.
+- Erros críticos podem só ser descobertos no final, quando ocorre a fase de testes, enquanto no processo ágil o software é constantemente testado.
 
 
 A abordagem ágil foi desenvolvida para colmatar as falhas da metodologia em cascata, que, por ser linear, possui um elevado risco de desperdício de recursos. Sendo este um projecto open-source, apesar de que esta metodologia traria uma qualidade e estrutura de código bastante melhor, por outro lado dificultaria a introdução de novas ideias e funcionalidades por parte dos contribuidores externos.
@@ -103,7 +107,7 @@ O processo de desenvolvimento Incremental é também uma alternativa visto que c
 
 Através do desenvolvimento de pequenos *Waterfall* para diferentes módulos do projeto, conseguimos controlar a estrutura destes mesmos módulos e ainda assim conseguir alguma flexibilidade para efetuar alterações.
 
-Este modelo é uma boa escolha para projetos grandes e open-source como este visto que permite que os recursos humanos sejam mais facilmente divididos, algo que se revela particularmente útil, por exemplo, no que toca à integração nos variados browsers. No entanto, traz também desvantagens no que toca a relacionar os vários módulos, o que exige um contolo bastante exigente nesta fase.
+Este modelo é uma boa escolha para projetos grandes e open-source como este visto que permite que os recursos humanos são mais facilmente divididos, algo que se revela particularmente útil, por exemplo, no que toca à integração nos variados browsers. No entanto, traz também desvantagens no que toca a relacionar os vários módulos, o que exige um contolo bastante exigente nesta fase.
 
 ### RAD
 
