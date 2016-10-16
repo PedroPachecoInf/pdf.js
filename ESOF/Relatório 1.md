@@ -82,7 +82,6 @@ Existem diversos processos de desenvolvimento que poderiam ter sido usados para 
 O tradicional processo *Waterfall* é uma das alternativas possíveis ao *agile development*. 
 
 Baseando-se na divisão do desenvolvimento em fases específicas, em que cada fase depende da terminação da anterior, este processo permite coordenar e planear melhor o desenvolvimento.
-.
 
 #### Vantagens
 
