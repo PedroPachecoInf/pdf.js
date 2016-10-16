@@ -49,9 +49,11 @@ O repositório tem uma pequena equipa de contribuidores principais que revê as 
 
 Partindo de um código base, que serviu de núcleo da aplicação, foram sendo adicionados pequenos **incrementos** ao projeto, que contribuiam para a sua estabilidade e para a adição de uma ou outra funcionalidade. Estas adições são incentivadas ou realizadas por internautas que clonam o código e decidem modificá-lo ou utilizá-lo.
 
+<img src="https://cdn.rawgit.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%205%20-%20Evolu%C3%A7%C3%A3o%20do%20PDFjs.png" alt ="Evolução do pdf.js">
+
 No repositório que é partilhado no GitHub, há apenas uma *branch master*, mas a equipa que supervisiona o projeto mantém pelo menos outras duas *branches* ativas: uma para desenvolver o programa e outra para guardar as versões estáveis (*releases*).
 
-<img src = "" alt = "Esquema GIT do pdf.js">
+<img src = "https://rawgit.com/PedroPachecoInf/pdf.js/ESOF/ESOF/Relat%C3%B3rio%201%20-%20Esquemas/Esquema%206%20-%20Branches.png" alt="Esquema GIT do pdf.js"  width = "350" height = "450">
 
 Quando são implementadas funcionalidades e arranjos suficientes, um dos *main developers* faz *release* de uma nova versão completamente funcional para o repositório. Neste momento, o pdf.js encontra-se relativamente estável, com intervalos de meses entre *releases*.
 
