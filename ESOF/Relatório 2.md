@@ -5,11 +5,11 @@
 
 ### Requisitos
 
-<falar dos requisitos gerais: ser compatível com todos os browsers, ser rápido, ser fiável>
+(falar dos requisitos gerais: ser compatível com todos os browsers, ser rápido, ser fiável)
 
 ### Âmbito e propósito
 
-<permitir que um pdf seja visto em qualquer browser, facilitar a visualização de pdfs...
+(permitir que um pdf seja visto em qualquer browser, facilitar a visualização de pdfs...)
 
 ## Requisitos específicos e funcionalides
 
