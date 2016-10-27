@@ -3,9 +3,14 @@
 
 ## Introdução
 
-### Requisitos
+### Requisitos principais
 
-(falar dos requisitos gerais: ser compatível com todos os browsers, ser rápido, ser fiável)
+> "Like many before us, we were wondering why nobody had implemented a PDF reader in HTML5/JavaScript. The kinds of operations a PDF reader needs to be fast at –render text, draw lines, blit images– need to be fast in browsers too, so browsers are already highly optimized for them. (...) Displaying PDFs directly in the browser would definitely improve the user’s experience."
+>_**Andreas Gal** - criador do pdf.js_
+
+Um _software_ é desenvolvido a partir dos seus requisitos. Estes requisitos definem aquilo que deve ser possível concretizar ao utilizar a aplicação. Andreas Gal, ao criar o **pdf.js**, queria tornar realidade um leitor de PDF que fosse rápido e que pudesse ser incoporado nos browsers. Desta forma, uma pessoa poderia ler diretamente o PDF no browser, em vez de ter o esforço extra de o baixar e ler num programa próprio.
+
+Os requisitos do pdf.js não se limitam apenas ao utilizador que lê PDF, mas também ao que o hospeda na sua página Web. Por ser escrito em JavaScript, o pdf.js permite ao *host* de um website incorporar PDFs na sua página como se tratassem de um outro qualquer elemento HTML e possibilta interação entre o PDF e o resto do site.
 
 ### Âmbito e propósito
 
@@ -39,3 +44,6 @@ A equipa de desenvolvimento fornece um guião em que explica de forma detalhada 
 ## Contribuições
 
 ## Referências
+
+https://andreasgal.com/2011/06/15/pdf-js/ - Consultado a 25 de outubro
+
