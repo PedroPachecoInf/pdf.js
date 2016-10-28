@@ -23,6 +23,15 @@ Atualmente, as pessoas intervenientes no desenvolvimento do PDF.js trabalham par
 
 A equipa de desenvolvimento fornece um guião em que explica de forma detalhada como é possível contribuir e sugerir novas ideias. Para além disso, é também fornecida uma lista com os vários bugs detetados, e esta pode sempre aumentar se alguém eventualmente descobrir novos problemas no programa.
 
+Quando uma pessoa pretende contribuir com uma nova ideia ou mesmo corrigir bugs deve fazer o seguinte:
+    1.Fork: Primeiro deve criar uma conta no GitHub e fazer fork do projeto.
+    2.Criar uma branch: Depois de fazer fork, deve criar uma branch, idealmente com o nome da nova funcionalidade que pretende adicionar ou mesmo do bug que vai corrigir e trabalhar nesta.
+    3.Editar: Após a criação da branch, o contribuidor deve fazer as alterações que entende de acordo com "coding style" exigido.
+    4.Correr os testes: São fornecidos alguns testes, que devem ser usados para verificar se está tudo em ordem.
+    5.Criar o Pull Request: Se tudo até este ponto estiver funcional, a pessoa pode criar o Pull Request e esperar que o código seja analisado.
+
+Para além desta forma de contribuição, existem encontros semanais para a discussão do desenvolvimento do projeto. Qualquer pessoa pode aparecer no meeting e dar o seu ponto de vista sobre o projeto, sugerir novas ideias ou até mesmo apontar novos bugs.
+
 
 
 ### Requerimentos funcionais
