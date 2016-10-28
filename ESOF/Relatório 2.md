@@ -32,6 +32,7 @@ Quando uma pessoa pretende contribuir com uma nova ideia ou mesmo corrigir bugs 
 
 Para além desta forma de contribuição, existem encontros semanais para a discussão do desenvolvimento do projeto. Qualquer pessoa pode aparecer no meeting e dar o seu ponto de vista sobre o projeto, sugerir novas ideias ou até mesmo apontar novos bugs.
 
+Um dos principais requisitos é a possibilidade de usar o PDF.js em qualquer browser existente.
 
 
 ### Requerimentos funcionais
