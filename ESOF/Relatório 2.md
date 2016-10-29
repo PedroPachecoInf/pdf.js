@@ -91,6 +91,10 @@ Já as suas **qualidades de evolução** são:
 
 ## Análise de domínio
 
+Para facilitar a compreensão do das mecânicas básicas do PDF.js, criou-se um modelo de dominio (*domain model*) que abrange as 3 camadas fundamentais do mesmo, incluindo algum do funcionamento interno respetivo de cada camada.
+
+<img src = "C:\Users\Diogo\Documents\GitHub\pdf.js\ESOF\Relatorio 2 - Esquemas\domain model.png" alt = "domain model">
+
 ## Contribuições
 
 ## Referências
