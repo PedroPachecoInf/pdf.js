@@ -96,7 +96,10 @@ Já as suas **qualidades de evolução** são:
 ## Referências
 
 https://andreasgal.com/2011/06/15/pdf-js/ - Consultado a 25 de outubro
+
 http://www.pmexamsmartnotes.com/difference-between-requirements-and-scope/ - Consultado a 27 de outubro
+
 https://en.wikipedia.org/wiki/Scope_(project_management) - Consultado a 27 de outubro
+
 https://en.wikipedia.org/wiki/Non-functional_requirement -  Consultado a 28 de outubro
 
