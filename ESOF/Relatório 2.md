@@ -91,7 +91,7 @@ Sendo o pdf.js um programa utilizado por defeito no Mozilla Firefox, é essencia
 
 ### Diagrama
 
-<img src = ".\Relatorio 2 - Esquemas\use case diagrama.png" alt = "use case model">
+<img src = ".\Relatorio 2 - Esquemas\use case diagram.png" alt = "use case model">
 
 ### Atores
 Os atores que intervém no sistema são apenas dois: a página web na qual o pdf.js é corrido (WebSite) e o ficheiro PDF a ser lido(PDF File).
