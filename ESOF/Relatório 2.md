@@ -92,6 +92,14 @@ Sendo o pdf.js um programa utilizado por defeito no Mozilla Firefox, é essencia
 ### Sistema
 
 ### Atores
+Os atores que intervém no sistema são apenas dois: a página web na qual o pdf.js é corrido (WebSite) e o ficheiro PDF a ser lido(PDF File).
+
+-O Website corre o PDF.js e posteriormente comunica com ele através de várias funções especificadas no programa. O Website é o único ator que desencadeia os casos de uso, e assim sendo o único que espera algo em retorno.
+
+-O PDF File funciona quase como uma base de dados, pelo que não desencadeia nenhum caso de uso. No entanto, é um elemento sempre presente pois é fonte dos dados que são tratados pelo pdf.js.
+
+Existem outras entidades que poderiam de certa forma parecer atores, mas no entanto não o são. Estas entidades como o utilizador comum do website ou programador do website, não interagem com o pdf.js mas sim com o website em si, pelo que não são consideradas atores.
+
 
 ### Casos de uso e relações
 
