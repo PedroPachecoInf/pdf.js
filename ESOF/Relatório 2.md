@@ -27,10 +27,14 @@ O âmbito do pdf.js é muito restrito, pois trata-se de um leitor de um tipo esp
 | Ler um ficheiro PDF | Processos necessários para fazer o *input* da informação do ficheiro para o programa e interpretá-la.|
 | Incorporar um browser HTML5 | Criar um conjunto de normas escritas no standard HTML5, que permitam utilizar as funções de leitura de ficheiros de forma a fazer o *display* do PDF num browser atual.|
 
-## Implementação de funcionalidades
-O desenvolvimento deste projeto, para além da equipa inicial, depende muito da comunidade, dado que esta pode intervir ativamente neste processo.
+## Elicitação de requisitos
+Na elicitação de requisitos, ou seja, no levantamento das funcionalidades que o software necessita ter, é imperativa a interação com a parte que tem interesse direto no sucesso do produto, sejam eles investidores ou clientes. As partes com este papel denominam-se *stakerholders*.
 
-Atualmente, as pessoas intervenientes no desenvolvimento do PDF.js trabalham para implementar novas funcionalidades e corrigir os vários *issues* existentes, de forma a tornar este projeto num grande sucesso.
+Para que a elicitação seja bem efetuada, a equipa de desenvolvimento deve ir entrevistando e debatendo protóripos com os *stakeholders*,  de forma a que não hajam grandes alterações de requisitos numa fase posterior do projeto.
+
+Sendo o pdf.js open-source, depende muito da comunidade online, que ganha o papel de *stakeholder*.
+
+Atualmente, as pessoas intervenientes no desenvolvimento do PDF.js trabalham para implementar novas funcionalidades e corrigir os vários *issues* existentes, de forma a tornar este projeto num grande sucesso, pelo que desempenham tanto a função de *stakeholder* como de contribuidor.
 
 A equipa de desenvolvimento fornece um guião em que explica de forma detalhada como é possível contribuir e sugerir novas ideias. Para além disso, é também fornecida uma lista com os vários bugs detetados, e esta pode sempre aumentar se alguém eventualmente descobrir novos problemas no programa.
 
@@ -64,17 +68,19 @@ As qualidades -ou seja, os requisitos não-funcionais- do pdf.js podem ser divid
 2. **Qualidades de execução**, que são observadas em *runtime*. Ex.: segurança e usabilidade.
 3. **Qualidades de evolução**, que permitem alterar a estrutura do sistema de software. Ex.: testabilidade, extensibilidade e escalabilidade.
 
-Sendo o pdf.js um programa utilizado por defeito no Mozilla Firefox, é essencial que o seu patamar de qualidade seja elevado, para não denegrir a fama do browser e afastar milhões de utilizadores. As suas **qualidades de desenvolvimento** foram influenciadas pelas linguagens mais populares para *web development* dos dias de hoje, que são as que permitirão ao pdf.js ser compatível com a maior parte dos sistemas:
+Sendo o pdf.js um programa utilizado por defeito no Mozilla Firefox, é essencial que o seu patamar de qualidade seja elevado, para não denegrir a fama do browser e afastar milhões de utilizadores. 
 
-- Deve ser codificado em JavaScript.
-- Deve obedecer às normas HTML5.
+**Requistos não-funcionais de desenvolvimento** 
 
-Em termos de **requisitos não-funcionais** de execução, o pdf.js deve:
+- Ser codificado em JavaScript.
+- Obedecer às normas HTML5.
+
+**Requisitos não-funcionais de execução**:
 
 - Ter uma interface simples e auto-explicativa.
 - Possuir uma camada de segurança bem estabelecida, para que não haja injeção de código através do PDF.
 
-Já as suas **qualidades de evolução** são:
+**Requisitos não-funcionais de evolução**:
 
 - Facilitar **testes de execução**, disponibilizando uma série de testes automáticos.
 - Ter uma estutura propensa à **extensibilidade**, para que seja possível adicionar novas funcionalidades.
@@ -91,7 +97,7 @@ Já as suas **qualidades de evolução** são:
 
 ## Análise de domínio
 
-Para facilitar a compreensão do das mecânicas básicas do PDF.js, criou-se um modelo de dominio (*domain model*) que abrange as 3 camadas fundamentais do mesmo, incluindo algum do funcionamento interno respetivo de cada camada.
+Para facilitar a compreensão das mecânicas básicas do PDF.js, criou-se um modelo de dominio (*domain model*) que abrange as 3 camadas fundamentais do mesmo, incluindo algum do funcionamento interno respetivo de cada camada.
 
 <img src = ".\Relatorio 2 - Esquemas\domain model.png" alt = "domain model">
 
