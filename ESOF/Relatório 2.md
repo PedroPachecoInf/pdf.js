@@ -21,35 +21,64 @@ Da mesma forma que um construtor civil constrói uma cerca em redor da sua área
 
 O âmbito do pdf.js é muito restrito, pois trata-se de um leitor de um tipo específico de ficheiros. O âmbito global deste *webviewer* pode ser subdividido em âmbitos menores, que têm como objetivo final preencher um requisito, por exemplo:
 
-| Requerimento | Âmbito |
+| Requisito | Âmbito |
 | --- | --- |
 | Ler um ficheiro PDF | Processos necessários para fazer o *input* da informação do ficheiro para o programa e interpretá-la.|
 | Incorporar um browser HTML5 | Criar um conjunto de normas escritas no standard HTML5, que permitam utilizar as funções de leitura de ficheiros de forma a fazer o *display* do PDF num browser atual.|
 
-## Requisitos específicos e funcionalides
+## Implementação de funcionalidades
 O desenvolvimento deste projeto, para além da equipa inicial, depende muito da comunidade, dado que esta pode intervir ativamente neste processo.
 
-Atualmente, as pessoas intervenientes no desenvolvimento do PDF.js trabalham para implementar novas funcionalidades e corrigir os vários issues existentes, de forma a tornar este projeto num grande sucesso.
+Atualmente, as pessoas intervenientes no desenvolvimento do PDF.js trabalham para implementar novas funcionalidades e corrigir os vários *issues* existentes, de forma a tornar este projeto num grande sucesso.
 
 A equipa de desenvolvimento fornece um guião em que explica de forma detalhada como é possível contribuir e sugerir novas ideias. Para além disso, é também fornecida uma lista com os vários bugs detetados, e esta pode sempre aumentar se alguém eventualmente descobrir novos problemas no programa.
 
 Quando uma pessoa pretende contribuir com uma nova ideia ou mesmo corrigir bugs deve fazer o seguinte:
-    1.Fork: Primeiro deve criar uma conta no GitHub e fazer fork do projeto.
-    2.Criar uma branch: Depois de fazer fork, deve criar uma branch, idealmente com o nome da nova funcionalidade que pretende adicionar ou mesmo do bug que vai corrigir e trabalhar nesta.
-    3.Editar: Após a criação da branch, o contribuidor deve fazer as alterações que entende de acordo com "coding style" exigido.
-    4.Correr os testes: São fornecidos alguns testes, que devem ser usados para verificar se está tudo em ordem.
-    5.Criar o Pull Request: Se tudo até este ponto estiver funcional, a pessoa pode criar o Pull Request e esperar que o código seja analisado.
+
+1. Fork: Primeiro deve criar uma conta no GitHub e fazer fork do projeto.
+2. Criar uma branch: Depois de fazer fork, deve criar uma branch, idealmente com o nome da nova funcionalidade que pretende adicionar ou mesmo do bug que vai corrigir e trabalhar nesta.
+3. Editar: Após a criação da branch, o contribuidor deve fazer as alterações que entende de acordo com "coding style" exigido.
+4. Correr os testes: São fornecidos alguns testes, que devem ser usados para verificar se está tudo em ordem.
+5. Criar o Pull Request: Se tudo até este ponto estiver funcional, a pessoa pode criar o Pull Request e esperar que o código seja analisado.
 
 Para além desta forma de contribuição, existem encontros semanais para a discussão do desenvolvimento do projeto. Qualquer pessoa pode aparecer no meeting e dar o seu ponto de vista sobre o projeto, sugerir novas ideias ou até mesmo apontar novos bugs.
 
-Um dos principais requisitos é a possibilidade de usar o PDF.js em qualquer browser existente.
+### Requisitos funcionais
 
+Em Engenharia de Software, os requisitos funcionais de um programa são as capacidades que este deve ter e são definidas pelo cliente ou utilizador. O cliente do pdf.js é um qualquer internauta que deseje abrir um PDF no seu browser. Por exemplo, qualquer utilizador do Mozilla Firefox torna-se um cliente "forçado" do pdf.js ao abrir um PDF nesse browser. Como tal, os requisitos funcionais mais importantes do pdf.js são:
 
-### Requerimentos funcionais
+- Ler qualquer ficheiro PDF
+- Fazer o *render* e *display* do PDF da forma mais rápida e otimizada possível
+- Permitir a inclusão de anotações no PDF
+- Poder ser incorporado numa página web
+- Poder ser corrido a partir de qualquer browser que compile HTML5
 
-### Requerimentos não-funcionais
+### Requisitos não-funcionais
 
-### Funcionalides
+Os requisitos não-funcionais influenciam a forma como os requisitos funcionais são atingidos. São, sobretudo, requisitos a nível da qualidade do produto, que regem a forma como os processos de desenvolvimento são executados.
+
+As qualidades -ou seja, os requisitos não-funcionais- do pdf.js podem ser divididas em três categorias: 
+
+1. Qualidades de desenvolvimento, que são aplicadas na criação do programa. Ex.: linguagem e standards utilizados no código.
+2. Qualidades de execução, que são observadas em *runtime*. Ex.: segurança e usabilidade.
+3. Qualidades de evolução, que permitem alterar a estrutura do sistema de software. Ex.: testabilidade, extensibilidade e escalabilidade.
+
+Sendo o pdf.js um programa utilizado por defeito no Mozilla Firefox, é essencial que o seu patamar de qualidade seja elevado, para não denegrir a fama do browser e afastar milhões de utilizadores. As suas **qualidades de desenvolvimento** foram influenciadas pelas linguagens mais populares para *web development* dos dias de hoje, que são as que permitirão ao pdf.js ser compatível com a maior parte dos sistemas:
+
+- Deve ser codificado em JavaScript.
+- Deve obedecer às normas HTML5.
+
+Em termos de **requisitos não-funcionais** de execução, o pdf.js deve:
+
+- Ter uma interface simples e auto-explicativa.
+- Possuir uma camada de segurança bem estabelecida, para que não haja injeção de código através do PDF.
+
+Já as suas **qualidades de evolução** são:
+
+- Facilitar **testes de execução**, disponibilizando uma série de testes automáticos.
+- Ter uma estutura propensa à **extensibilidade**, para que seja possível adicionar novas funcionalidades.
+- Permitir a **escalabilidade** do seu núcleo de código, para que possa acompanhar a evolução dos standards usados, nomeadamente do HTML5 e do JavaScript.
+
 
 ## Casos de uso
 
@@ -66,4 +95,7 @@ Um dos principais requisitos é a possibilidade de usar o PDF.js em qualquer bro
 ## Referências
 
 https://andreasgal.com/2011/06/15/pdf-js/ - Consultado a 25 de outubro
+http://www.pmexamsmartnotes.com/difference-between-requirements-and-scope/ - Consultado a 27 de outubro
+https://en.wikipedia.org/wiki/Scope_(project_management) - Consultado a 27 de outubro
+https://en.wikipedia.org/wiki/Non-functional_requirement -  Consultado a 28 de outubro
 
