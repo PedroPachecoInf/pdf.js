@@ -1,4 +1,5 @@
 # Elicitação de requisitos
+<img src="http://www.junifeup.pt/wp-content/uploads/2016/01/feup.png" alt="Logo FEUP" width = "600" height ="200"/>
 #### Relatório de Engenharia de Software
 
 ## Introdução
@@ -37,7 +38,7 @@ Quando uma pessoa pretende contribuir com uma nova ideia ou mesmo corrigir bugs 
 
 1. Fork: Primeiro deve criar uma conta no GitHub e fazer fork do projeto.
 2. Criar uma branch: Depois de fazer fork, deve criar uma branch, idealmente com o nome da nova funcionalidade que pretende adicionar ou mesmo do bug que vai corrigir e trabalhar nesta.
-3. Editar: Após a criação da branch, o contribuidor deve fazer as alterações que entende de acordo com "coding style" exigido.
+3. Editar: Após a criação da branch, o contribuidor deve fazer as alterações que entende de acordo com *"coding style"* exigido.
 4. Correr os testes: São fornecidos alguns testes, que devem ser usados para verificar se está tudo em ordem.
 5. Criar o Pull Request: Se tudo até este ponto estiver funcional, a pessoa pode criar o Pull Request e esperar que o código seja analisado.
 
@@ -59,9 +60,9 @@ Os requisitos não-funcionais influenciam a forma como os requisitos funcionais 
 
 As qualidades -ou seja, os requisitos não-funcionais- do pdf.js podem ser divididas em três categorias: 
 
-1. Qualidades de desenvolvimento, que são aplicadas na criação do programa. Ex.: linguagem e standards utilizados no código.
-2. Qualidades de execução, que são observadas em *runtime*. Ex.: segurança e usabilidade.
-3. Qualidades de evolução, que permitem alterar a estrutura do sistema de software. Ex.: testabilidade, extensibilidade e escalabilidade.
+1. **Qualidades de desenvolvimento**, que são aplicadas na criação do programa. Ex.: linguagem e standards utilizados no código.
+2. **Qualidades de execução**, que são observadas em *runtime*. Ex.: segurança e usabilidade.
+3. **Qualidades de evolução**, que permitem alterar a estrutura do sistema de software. Ex.: testabilidade, extensibilidade e escalabilidade.
 
 Sendo o pdf.js um programa utilizado por defeito no Mozilla Firefox, é essencial que o seu patamar de qualidade seja elevado, para não denegrir a fama do browser e afastar milhões de utilizadores. As suas **qualidades de desenvolvimento** foram influenciadas pelas linguagens mais populares para *web development* dos dias de hoje, que são as que permitirão ao pdf.js ser compatível com a maior parte dos sistemas:
 
