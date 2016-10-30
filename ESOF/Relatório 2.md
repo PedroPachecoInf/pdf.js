@@ -96,21 +96,28 @@ Sendo o pdf.js um programa utilizado por defeito no Mozilla Firefox, é essencia
 ### Atores
 Os atores que intervém no sistema são apenas dois: a página web na qual o pdf.js é corrido (WebSite) e o ficheiro PDF a ser lido(PDF File).
 
--O Website corre o PDF.js e posteriormente comunica com ele através de várias funções especificadas no programa. O Website é o único ator que desencadeia os casos de uso, e assim sendo o único que espera algo em retorno.
+- O Website corre o PDF.js e posteriormente comunica com ele através de várias funções especificadas no programa. O Website é o único ator que desencadeia os casos de uso, e assim sendo o único que espera algo em retorno.
 
--O PDF File funciona quase como uma base de dados, pelo que não desencadeia nenhum caso de uso. No entanto, é um elemento sempre presente pois é fonte dos dados que são tratados pelo pdf.js.
+- O PDF File funciona quase como uma base de dados, pelo que não desencadeia nenhum caso de uso. No entanto, é um elemento sempre presente pois é fonte dos dados que são tratados pelo pdf.js.
 
 Existem outras entidades que poderiam de certa forma parecer atores, mas no entanto não o são. Estas entidades como o utilizador comum do website ou programador do website, não interagem com o pdf.js mas sim com o website em si, pelo que não são consideradas atores.
 
 ### Descrição Casos de uso
 Nome: Mostrar um ficheiro PDF
+
 Atores: Website, PDF File
+
 Objectivo: Mostrar um determinado ficheiro pdf no website
+
 Referência aos Requerimentos:...
+
 Pré-condições:
-	O website está aberto sem nenhum outro problema
-	O ficheiro pdf  existe e é válido
+
+- O website está aberto sem nenhum outro problema
+- O ficheiro pdf  existe e é válido
+
 Descrição:
+
 	1. O Website corre o pdf.js
 	2. O Website fornece o endereço do ficheiro pdf e pede ao pdf.js o documento
 	3. O PDF.js lê os dados contidos no ficheiro pdf indicado
@@ -118,12 +125,15 @@ Descrição:
 	5. O PDF.js prepara a página indicada para posteriores operações
 	6. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
 Pós-condições:
+
 	O Website consegue mostrar um ficheiro pdf
 Variações:
+
 	6a. O documento têm mais de uma página
 		6a1. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
 		6a2. O processo continua para o item 2.
 Exceções:
+
 	2a. O ficheiro pdf não existe.
 		2a1. O PDF.js retorna uma mensagem de erro.
 
