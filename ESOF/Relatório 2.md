@@ -103,10 +103,10 @@ Os atores que intervém no sistema são apenas dois: a página web na qual o pdf
 Existem outras entidades que poderiam de certa forma parecer atores, mas no entanto não o são. Estas entidades como o utilizador comum do website ou programador do website, não interagem com o pdf.js mas sim com o website em si, pelo que não são consideradas atores.
 
 ### Descrição Casos de uso
-	**Nome**: Mostrar um ficheiro PDF
+**Nome**: Mostrar um ficheiro PDF
 
 	**Atores**: Website, PDF File
-
+	
 	**Objectivo**: Mostrar um determinado ficheiro pdf no website
 
 	**Referência aos Requerimentos**: ...
@@ -143,33 +143,34 @@ Existem outras entidades que poderiam de certa forma parecer atores, mas no enta
 
 **Nome**: Render a Page
 
-**Atores**: Website
+	**Atores**: Website
 
-**Objectivo**: *Renderizar* uma página do ficheiro pdf
+	**Objectivo**: *Renderizar* uma página do ficheiro pdf
 
-**Referência aos Requerimentos**: ...
+	**Referência aos Requerimentos**: ...
 
-**Pré-condições**:
+	**Pré-condições**:
 
-- Curso normal do caso de uso "*Display a PDF File*" completado
-- Uma página foi escolhida com sucesso
+	- Curso normal do caso de uso "*Display a PDF File*" completado
+	- Uma página foi escolhida com sucesso
 
-**Descrição**:
+	**Descrição**:
 
-1. O Website solicita o *rendering* da página
-2. O PDF.js trata os dados referentes à página e gera a imagem correspondente
+	1. O Website solicita o *rendering* da página
+	2. O PDF.js trata os dados referentes à página e gera a imagem correspondente
 	
-**Pós-condições**:
+	**Pós-condições**:
 
-- A página é *renderizada*
+	- A página é *renderizada*
 
-**Variações**:
+	**Variações**:
 
-- ...
-**Exceções**:
+	- ...
+	
+	**Exceções**:
 
-- 2a. O page têm algum problema.
-- 2a1. O PDF.js retorna uma mensagem de erro.
+	- 2a. O page têm algum problema.
+	- 2a1. O PDF.js retorna uma mensagem de erro.
 
 ## Análise de domínio
 
