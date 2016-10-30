@@ -127,18 +127,18 @@ Existem outras entidades que poderiam de certa forma parecer atores, mas no enta
 
 **Pós-condições**:
 
-O Website consegue mostrar um ficheiro pdf
+- O Website consegue mostrar um ficheiro pdf
 
 **Variações**:
 
-6a. O documento têm mais de uma página
-	6a1. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
-	6a2. O processo continua para o item 2.
+6. a. O documento têm mais de uma página
+6. a. 1. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
+6. a. 2. O processo continua para o item 2.
 	
 **Exceções**:
 
-2a. O ficheiro pdf não existe.
-	2a1. O PDF.js retorna uma mensagem de erro.
+2. a. O ficheiro pdf não existe.
+2. a.1. O PDF.js retorna uma mensagem de erro.
 
 
 Nome: Render a Page
