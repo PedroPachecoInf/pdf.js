@@ -131,33 +131,45 @@ Existem outras entidades que poderiam de certa forma parecer atores, mas no enta
 
 **Variações**:
 
-6. a. O documento têm mais de uma página
-6. a. 1. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
-6. a. 2. O processo continua para o item 2.
+- 6a. O documento têm mais de uma página
+- 6a1. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
+- 6a2. O processo continua para o item 2.
 	
 **Exceções**:
 
-2. a. O ficheiro pdf não existe.
-2. a.1. O PDF.js retorna uma mensagem de erro.
+- 2a. O ficheiro pdf não existe.
+- 2a1. O PDF.js retorna uma mensagem de erro.
 
 
-Nome: Render a Page
-Atores: Website
-Objectivo: *Renderizar* uma página do ficheiro pdf
-Referência aos Requerimentos:...
-Pré-condições:
-	Curso normal do caso de uso "*Display a PDF File*" completado
-	Uma página foi escolhida com sucesso
-Descrição:
-	1. O Website solicita o *rendering* da página
-	2. O PDF.js trata os dados referentes à página e gera a imagem correspondente
-Pós-condições:
-	A página é *renderizada*
-Variações:
-	...
-Exceções:
-	2a. O page têm algum problema.
-		2a1. O PDF.js retorna uma mensagem de erro.
+**Nome**: Render a Page
+
+**Atores**: Website
+
+**Objectivo**: *Renderizar* uma página do ficheiro pdf
+
+**Referência aos Requerimentos**: ...
+
+**Pré-condições**:
+
+- Curso normal do caso de uso "*Display a PDF File*" completado
+- Uma página foi escolhida com sucesso
+
+**Descrição**:
+
+1. O Website solicita o *rendering* da página
+2. O PDF.js trata os dados referentes à página e gera a imagem correspondente
+	
+**Pós-condições**:
+
+- A página é *renderizada*
+
+**Variações**:
+
+- ...
+**Exceções**:
+
+- 2a. O page têm algum problema.
+- 2a1. O PDF.js retorna uma mensagem de erro.
 
 ## Análise de domínio
 
