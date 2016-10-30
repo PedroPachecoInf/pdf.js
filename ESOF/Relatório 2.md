@@ -164,6 +164,8 @@ Para facilitar a compreensão das mecânicas básicas do PDF.js, criou-se um mod
 
 ## Contribuições
 
+Todos os membros contribuiram de igual forma para a elaboração deste relatório.
+
 ## Referências
 
 https://andreasgal.com/2011/06/15/pdf-js/ - Consultado a 25 de outubro
