@@ -103,42 +103,42 @@ Os atores que intervém no sistema são apenas dois: a página web na qual o pdf
 Existem outras entidades que poderiam de certa forma parecer atores, mas no entanto não o são. Estas entidades como o utilizador comum do website ou programador do website, não interagem com o pdf.js mas sim com o website em si, pelo que não são consideradas atores.
 
 ### Descrição Casos de uso
-**Nome**: Mostrar um ficheiro PDF
+	**Nome**: Mostrar um ficheiro PDF
 
-**Atores**: Website, PDF File
+	**Atores**: Website, PDF File
 
-**Objectivo**: Mostrar um determinado ficheiro pdf no website
+	**Objectivo**: Mostrar um determinado ficheiro pdf no website
 
-**Referência aos Requerimentos**: ...
+	**Referência aos Requerimentos**: ...
 
-**Pré-condições**:
+	**Pré-condições**:
 
-- O website está aberto sem nenhum outro problema
-- O ficheiro pdf  existe e é válido
+	- O website está aberto sem nenhum outro problema
+	- O ficheiro pdf  existe e é válido
 
-**Descrição**:
+	**Descrição**:
 
-1. O Website corre o pdf.js
-2. O Website fornece o endereço do ficheiro pdf e pede ao pdf.js o documento
-3. O PDF.js lê os dados contidos no ficheiro pdf indicado
-4. O Website solicita uma determinada página do documento
-5. O PDF.js prepara a página indicada para posteriores operações
-6. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
+	1. O Website corre o pdf.js
+	2. O Website fornece o endereço do ficheiro pdf e pede ao pdf.js o documento
+	3. O PDF.js lê os dados contidos no ficheiro pdf indicado
+	4. O Website solicita uma determinada página do documento
+	5. O PDF.js prepara a página indicada para posteriores operações
+	6. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
 
-**Pós-condições**:
+	**Pós-condições**:
 
-- O Website consegue mostrar um ficheiro pdf
+	- O Website consegue mostrar um ficheiro pdf
 
-**Variações**:
+	**Variações**:
 
-- 6a. O documento têm mais de uma página
-- 6a1. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
-- 6a2. O processo continua para o item 2.
+	- 6a. O documento têm mais de uma página
+	- 6a1. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
+	- 6a2. O processo continua para o item 2.
 	
-**Exceções**:
+	**Exceções**:
 
-- 2a. O ficheiro pdf não existe.
-- 2a1. O PDF.js retorna uma mensagem de erro.
+	- 2a. O ficheiro pdf não existe.
+	- 2a1. O PDF.js retorna uma mensagem de erro.
 
 
 **Nome**: Render a Page
