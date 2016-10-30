@@ -123,7 +123,7 @@ Existem outras entidades que poderiam de certa forma parecer atores, mas no enta
 	3. O PDF.js lê os dados contidos no ficheiro pdf indicado
 	4. O Website solicita uma determinada página do documento
 	5. O PDF.js prepara a página indicada para posteriores operações
-	6. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
+	6. O Website solicita o "rendering" da página como descrito no caso de uso "Render a Page”
 
 	**Pós-condições**:
 
@@ -132,7 +132,7 @@ Existem outras entidades que poderiam de certa forma parecer atores, mas no enta
 	**Variações**:
 
 	- 6a. O documento têm mais de uma página
-	- 6a1. O Website solicita o *rendering* da página como descrito no caso de uso "*Render a Page*”
+	- 6a1. O Website solicita o "rendering" da página como descrito no caso de uso "Render a Page”
 	- 6a2. O processo continua para o item 2.
 	
 	**Exceções**:
@@ -151,17 +151,17 @@ Existem outras entidades que poderiam de certa forma parecer atores, mas no enta
 
 	**Pré-condições**:
 
-	- Curso normal do caso de uso "*Display a PDF File*" completado
+	- Curso normal do caso de uso "Display a PDF File" completado
 	- Uma página foi escolhida com sucesso
 
 	**Descrição**:
 
-	1. O Website solicita o *rendering* da página
+	1. O Website solicita o "rendering" da página
 	2. O PDF.js trata os dados referentes à página e gera a imagem correspondente
 	
 	**Pós-condições**:
 
-	- A página é *renderizada*
+	- A página é "renderizada"
 
 	**Variações**:
 
