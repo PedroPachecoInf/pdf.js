@@ -12,7 +12,7 @@ O modelo de visualização 4+1 permite visualizar a arquitetura do software a pa
 
 - vista de **lógica** (*logical view*);
 - vista de **implementação** (*implementation view*);
-- vista de **implementação** (*deployment view*);
+- vista de **implantação** (*deployment view*);
 - vista de **processos** (*process view*).
 
 Estas vistas premitem incluir a perspetivas de todos os *stakeholders* do projeto, sejam eles os próprios *developers*, utilizadores ou *project managers*. 
