@@ -58,6 +58,12 @@ Na vista de processo, focamo-nos no comportamento do programa em tempo de execu�
 
 <img src = ".\Relatório 3 - Esquemas\Dynamic View.jpg" alt = "process view">
 
+## Logical View
+
+Na vista lógica, preocupamo-nos em apresentar de uma forma simples como está estruturado o pdf.js, dividindo e relacionando as várias camadas. Sendo assim, as duas camadas base são a camada "*core*" que interpreta o pdf e a "*display*" que depois o representa.Existe ainda a camada "*test*" que contém testes para verificar se um novo código implementado está devidamente feito.
+
+
+<img src = ".\Relatório 3 - Esquemas\Logical View.jpg" alt = "logical view">
 
 ## Contribuição
 
