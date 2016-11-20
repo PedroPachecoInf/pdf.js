@@ -37,6 +37,16 @@ A base da arquitetura é a *promessa*. Uma promessa representa o resultado de um
 O pdf.js usa estas promessas para carregar todos os módulos sem haver atrasos de espera por ficheiros mais extensos. 
 
 
+## Deployment View
+
+Nesta vista, percebemos onde e como podemos implementar o pdf.js. Verificamos que este tanto pode ser implementado num computador com recurso à clonagem do repositorio e posterior compilação (modo mais usado por developers), ou com recurso à simples adição das dependências e consequente integração no código dum website.
+
+<img src = ".\Relatório 3 - Esquemas\Deployment View.png" alt = "deployment view">
+
+
+------------------------------------
+
+
 
 Links úteis: https://addyosmani.com/resources/essentialjsdesignpatterns/book/
 
