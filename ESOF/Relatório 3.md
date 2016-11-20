@@ -36,7 +36,14 @@ O elemento básico de *Promises* é a "promessa". Uma promessa representa o resu
 - **realizada**: estado que representa uma operação bem-sucedida;
 - **rejeitada**: estado que representa uma operação mal-sucedida.
 
-O pdf.js usa estas promessas para carregar todos os módulos sem haver atrasos de espera por ficheiros mais extensos. 
+O pdf.js usa estas promessas para carregar todos os módulos sem haver atrasos de espera por ficheiros mais extensos.
+
+## Logical View
+
+Na vista lógica, preocupamo-nos em apresentar de uma forma simples como está estruturado o pdf.js, dividindo e relacionando as várias camadas. Sendo assim, as duas camadas base são a camada "*core*" que interpreta o pdf e a "*display*" que depois o representa.Existe ainda a camada "*test*" que contém testes para verificar se um novo código implementado está devidamente feito.
+
+
+<img src = ".\Relatório 3 - Esquemas\Logical View.jpg" alt = "logical view">
 
 ## Implementation view
 
@@ -58,35 +65,14 @@ Na vista de processo, focamo-nos no comportamento do programa em tempo de execu�
 
 <img src = ".\Relatório 3 - Esquemas\Dynamic View.jpg" alt = "process view">
 
-## Logical View
-
-Na vista lógica, preocupamo-nos em apresentar de uma forma simples como está estruturado o pdf.js, dividindo e relacionando as várias camadas. Sendo assim, as duas camadas base são a camada "*core*" que interpreta o pdf e a "*display*" que depois o representa.Existe ainda a camada "*test*" que contém testes para verificar se um novo código implementado está devidamente feito.
-
-
-<img src = ".\Relatório 3 - Esquemas\Logical View.jpg" alt = "logical view">
-
 ## Contribuição
 
 Todos os membros do grupo contribuiram de forma equitativa para a elaboração deste relatório.
 
 ## Referências
 
+https://addyosmani.com/resources/essentialjsdesignpatterns/book/ - consultado a 17 de Novembro de 2016
+
 https://developer.tizen.org/community/tip-tech/displaying-pdf-files-pdf.js-library - consultado a 17 de Novembro de 2016
 
 https://www.promisejs.org/ - consultado a 17 de Novembro de 2016
-
-### APAGAR
-------------------------------------
-
-Links úteis: https://addyosmani.com/resources/essentialjsdesignpatterns/book/
-
-http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
-
-https://developer.tizen.org/community/tip-tech/displaying-pdf-files-pdf.js-library
-
-Divisão:
-
--Vinte: Process View
--Duque: Deployment View
--Pacheco: Logical View
--Aleixo: Development View
