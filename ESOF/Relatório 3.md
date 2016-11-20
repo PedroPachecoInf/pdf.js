@@ -44,7 +44,7 @@ Numa vista de implementação, é mostrada a forma como o software pode ser deco
 
 No pdf.js, as suas componentes são módulos inter-dependentes que, quando carregados de forma bem sucedida, permitem lançar a aplicação. No diagrama seguinte, encontram-se demonstradas as dependências dos módulos "*core*" do pdf.js, que lidam principalmente com o processamento de informação. Este conjunto de componentes é depois interligado com as componenentes "*display*", para que os dados processados sejam imprimidos no ecrã.
 
-<img src=".\Relatório 3 - Esquemas\Development View.png" alt="development view">
+<img src=".\Relatório 3 - Esquemas\Core Implementation View.png" alt="development view">
 
 ## Deployment View
 
