@@ -56,7 +56,7 @@ Nesta vista, percebemos onde e como podemos implementar o pdf.js. Verificamos qu
 
 Na vista de processo, focamo-nos no comportamento do programa em tempo de execução, analisando os vários processos do sistema, o fluxo e a concorrência entre eles. O pdf.js funciona através de uma sequência de passos linear, sendo que cada passo do processo depende da realização do anterior.
 
-<img src = ".\Relatório 3 - Esquemas\Process View.jpg" alt = "process view">
+<img src = ".\Relatório 3 - Esquemas\Dynamic View.jpg" alt = "process view">
 
 
 ## Contribuição
