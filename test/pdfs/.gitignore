@@ -39,12 +39,16 @@
 !issue7492.pdf
 !issue7544.pdf
 !issue7598.pdf
+!issue7665.pdf
+!issue7835.pdf
+!bad-PageLabels.pdf
 !filled-background.pdf
 !ArabicCIDTrueType.pdf
 !ThuluthFeatures.pdf
 !arial_unicode_ab_cidfont.pdf
 !arial_unicode_en_cidfont.pdf
 !asciihexdecode.pdf
+!bug766086.pdf
 !bug793632.pdf
 !bug1020858.pdf
 !bug1050040.pdf
@@ -52,6 +56,7 @@
 !bug1068432.pdf
 !bug1146106.pdf
 !bug1252420.pdf
+!bug1308536.pdf
 !issue5564_reduced.pdf
 !canvas.pdf
 !bug1132849.pdf
@@ -258,3 +263,4 @@
 !annotation-text-widget.pdf
 !annotation-choice-widget.pdf
 !zero_descent.pdf
+!operator-in-TJ-array.pdf
