@@ -25,7 +25,8 @@
     factory((root.pdfjsWebDownloadManager = {}), root.pdfjsWebPDFJS);
   }
 }(this, function (exports, pdfjsLib) {
-//#if GENERIC || CHROME
+if (typeof PDFJSDev === 'undefined' || PDFJSDev.test('GENERIC || CHROME')) {
+  /* jshint -W082 */
   function download(blobUrl, filename) {
     var a = document.createElement('a');
     if (a.click) {
@@ -66,10 +67,9 @@
 
   DownloadManager.prototype = {
     downloadUrl: function DownloadManager_downloadUrl(url, filename) {
-      if (!pdfjsLib.isValidUrl(url, true)) {
+      if (!pdfjsLib.createValidAbsoluteUrl(url, 'http://example.com')) {
         return; // restricted/invalid URL
       }
-
       download(url + '#pdfjs.action=download', filename);
     },
 
@@ -106,5 +106,5 @@
   };
 
   exports.DownloadManager = DownloadManager;
-//#endif
+}
 }));

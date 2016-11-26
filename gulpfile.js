@@ -20,7 +20,9 @@
 var fs = require('fs');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var mkdirp = require('mkdirp');
 var rimraf = require('rimraf');
+var runSequence = require('run-sequence');
 var stream = require('stream');
 var exec = require('child_process').exec;
 var spawn = require('child_process').spawn;
@@ -28,6 +30,7 @@ var streamqueue = require('streamqueue');
 var zip = require('gulp-zip');
 
 var BUILD_DIR = 'build/';
+var JSDOC_DIR = 'jsdoc/';
 var L10N_DIR = 'l10n/';
 var TEST_DIR = 'test/';
 
@@ -127,25 +130,27 @@ function bundle(filename, outfilename, pathPrefix, initFiles, amdName, defines,
     return all[1].toUpperCase();
   });
 
-  // Avoiding double processing of the bundle file.
-  var templateContent = fs.readFileSync(filename).toString();
-  var tmpFile = outfilename + '.tmp';
-  fs.writeFileSync(tmpFile, templateContent.replace(
-    /\/\/#expand\s+__BUNDLE__\s*\n/, function (all) { return bundleContent; }));
-  bundleContent = null;
-  templateContent = null;
-
-  // This just preprocesses the empty pdf.js file, we don't actually want to
-  // preprocess everything yet since other build targets use this file.
-  builder.preprocess(tmpFile, outfilename,
-    builder.merge(defines, {
+  var p2 = require('./external/builder/preprocessor2.js');
+  var ctx = {
+    rootPath: __dirname,
+    saveComments: 'copyright',
+    defines: builder.merge(defines, {
       BUNDLE_VERSION: versionInfo.version,
       BUNDLE_BUILD: versionInfo.commit,
       BUNDLE_AMD_NAME: amdName,
       BUNDLE_JS_NAME: jsName,
       MAIN_FILE: isMainFile
-    }));
-  fs.unlinkSync(tmpFile);
+    })
+  };
+
+  var templateContent = fs.readFileSync(filename).toString();
+  templateContent = templateContent.replace(
+    /\/\/#expand\s+__BUNDLE__\s*\n/, function (all) { return bundleContent; });
+  bundleContent = null;
+
+  templateContent = p2.preprocessPDFJSCode(ctx, templateContent);
+  fs.writeFileSync(outfilename, templateContent);
+  templateContent = null;
 }
 
 function createBundle(defines) {
@@ -246,11 +251,11 @@ function createWebBundle(defines) {
     template = 'web/viewer.js';
     files = ['app.js'];
     if (defines.FIREFOX || defines.MOZCENTRAL) {
-      files.push('firefoxcom.js');
+      files.push('firefoxcom.js', 'firefox_print_service.js');
     } else if (defines.CHROME) {
-      files.push('chromecom.js', 'mozPrintCallback_polyfill.js');
+      files.push('chromecom.js', 'pdf_print_service.js');
     } else if (defines.GENERIC) {
-      files.push('mozPrintCallback_polyfill.js');
+      files.push('pdf_print_service.js');
     }
   }
 
@@ -337,6 +342,13 @@ gulp.task('default', function() {
   });
 });
 
+gulp.task('extension', function (done) {
+  console.log();
+  console.log('### Building extensions');
+
+  runSequence('locale', 'firefox', 'chromium', done);
+});
+
 gulp.task('buildnumber', function (done) {
   console.log();
   console.log('### Getting extension build number');
@@ -417,6 +429,28 @@ gulp.task('bundle-components', ['buildnumber'], function () {
 
 gulp.task('bundle', ['buildnumber'], function () {
   return createBundle(DEFINES).pipe(gulp.dest(BUILD_DIR));
+});
+
+gulp.task('jsdoc', function (done) {
+  console.log();
+  console.log('### Generating documentation (JSDoc)');
+
+  var JSDOC_FILES = [
+    'src/doc_helper.js',
+    'src/display/api.js',
+    'src/display/global.js',
+    'src/shared/util.js',
+    'src/core/annotation.js'
+  ];
+
+  var directory = BUILD_DIR + JSDOC_DIR;
+  rimraf(directory, function () {
+    mkdirp(directory, function () {
+      var command = '"node_modules/.bin/jsdoc" -d ' + directory + ' ' +
+                    JSDOC_FILES.join(' ');
+      exec(command, done);
+    });
+  });
 });
 
 gulp.task('publish', ['generic'], function (done) {

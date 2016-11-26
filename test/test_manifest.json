@@ -784,6 +784,13 @@
        "link": false,
        "type": "load"
     },
+    {  "id": "bug1308536",
+       "file": "pdfs/bug1308536.pdf",
+       "md5": "cc2258981e33ad8d96acbf87318716d5",
+       "rounds": 1,
+       "link": false,
+       "type": "eq"
+    },
     {  "id": "bug1252420",
        "file": "pdfs/bug1252420.pdf",
        "md5": "f21c911b9b655972b06ef782a1fa6a17",
@@ -1043,6 +1050,14 @@
        "link": false,
        "rounds": 1,
        "type": "eq"
+    },
+    {  "id": "issue7665",
+       "file": "pdfs/issue7665.pdf",
+       "md5": "f1199d16195a61e8232e2d1e742ed46b",
+       "link": false,
+       "rounds": 1,
+       "type": "load",
+       "about": "Encrypted file with indirect objects in the /Encrypt dictionary."
     },
     {  "id": "protectip",
        "file": "pdfs/protectip.pdf",
@@ -1793,6 +1808,13 @@
     {  "id": "issue5801",
        "file": "pdfs/issue5801.pdf",
        "md5": "e9548650ad40e13e00d2a486bbc2bb1b",
+       "rounds": 1,
+       "link": false,
+       "type": "eq"
+    },
+    {  "id": "issue7835",
+       "file": "pdfs/issue7835.pdf",
+       "md5": "afb3206a83ee3fd19f3dea0480f942ec",
        "rounds": 1,
        "link": false,
        "type": "eq"
@@ -3266,6 +3288,13 @@
        "link": false,
        "rounds": 1,
        "lastPage": 1,
+       "type": "text"
+    },
+    {  "id": "operator-in-TJ-array",
+       "file": "pdfs/operator-in-TJ-array.pdf",
+       "md5": "dfe0f15a45be18eca142adaf760984ee",
+       "link": false,
+       "rounds": 1,
        "type": "text"
     }
 ]

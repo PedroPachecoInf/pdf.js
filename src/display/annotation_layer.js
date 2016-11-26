@@ -299,7 +299,7 @@ var LinkAnnotationElement = (function LinkAnnotationElementClosure() {
         if (this.data.action) {
           this._bindNamedAction(link, this.data.action);
         } else {
-          this._bindLink(link, (this.data.dest || null));
+          this._bindLink(link, this.data.dest);
         }
       }
 
@@ -509,7 +509,7 @@ var TextWidgetAnnotationElement = (
       // TODO: This duplicates some of the logic in CanvasGraphics.setFont().
       var style = element.style;
       style.fontSize = this.data.fontSize + 'px';
-      style.direction = (this.data.fontDirection < 0 ? 'rtl': 'ltr');
+      style.direction = (this.data.fontDirection < 0 ? 'rtl' : 'ltr');
 
       if (!font) {
         return;

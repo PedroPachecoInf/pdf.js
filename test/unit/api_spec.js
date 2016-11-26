@@ -503,14 +503,24 @@ describe('api', function() {
         return pdfDoc.getPageLabels();
       });
 
-      Promise.all([promise0, promise1, promise2]).then(function (pageLabels) {
+      // PageLabels with bad "Prefix" entries.
+      var url3 = new URL('../pdfs/bad-PageLabels.pdf', window.location).href;
+      var loadingTask3 = new PDFJS.getDocument(url3);
+      var promise3 = loadingTask3.promise.then(function (pdfDoc) {
+        return pdfDoc.getPageLabels();
+      });
+
+      Promise.all([promise0, promise1, promise2, promise3]).then(
+          function (pageLabels) {
         expect(pageLabels[0]).toEqual(['i', 'ii', 'iii', '1']);
         expect(pageLabels[1]).toEqual(['Front Page1']);
         expect(pageLabels[2]).toEqual(['1', '2']);
+        expect(pageLabels[3]).toEqual(['X1']);
 
         loadingTask0.destroy();
         loadingTask1.destroy();
         loadingTask2.destroy();
+        loadingTask3.destroy();
         done();
       }).catch(function (reason) {
         done.fail(reason);
@@ -619,6 +629,8 @@ describe('api', function() {
         expect(outlineItem.title).toEqual('Chapter 1');
         expect(outlineItem.dest instanceof Array).toEqual(true);
         expect(outlineItem.url).toEqual(null);
+        expect(outlineItem.unsafeUrl).toBeUndefined();
+        expect(outlineItem.newWindow).toBeUndefined();
 
         expect(outlineItem.bold).toEqual(true);
         expect(outlineItem.italic).toEqual(false);
@@ -643,7 +655,9 @@ describe('api', function() {
           var outlineItemTwo = outline[2];
           expect(typeof outlineItemTwo.title).toEqual('string');
           expect(outlineItemTwo.dest).toEqual(null);
-          expect(outlineItemTwo.url).toEqual('http://google.com');
+          expect(outlineItemTwo.url).toEqual('http://google.com/');
+          expect(outlineItemTwo.unsafeUrl).toEqual('http://google.com');
+          expect(outlineItemTwo.newWindow).toBeUndefined();
 
           var outlineItemOne = outline[1];
           expect(outlineItemOne.bold).toEqual(false);
@@ -755,6 +769,9 @@ describe('api', function() {
     it('gets ref', function () {
       expect(page.ref).toEqual({ num: 15, gen: 0 });
     });
+    it('gets userUnit', function () {
+      expect(page.userUnit).toEqual(1.0);
+    });
     it('gets view', function () {
       expect(page.view).toEqual([0, 0, 595.28, 841.89]);
     });
@@ -788,6 +805,68 @@ describe('api', function() {
         done.fail(reason);
       });
     });
+
+    it('gets annotations containing relative URLs (bug 766086)',
+        function (done) {
+      var url = new URL('../pdfs/bug766086.pdf', window.location).href;
+
+      var defaultLoadingTask = PDFJS.getDocument(url);
+      var defaultPromise = defaultLoadingTask.promise.then(function (pdfDoc) {
+        return pdfDoc.getPage(1).then(function (pdfPage) {
+          return pdfPage.getAnnotations();
+        });
+      });
+
+      var docBaseUrlLoadingTask = PDFJS.getDocument({
+        url: url,
+        docBaseUrl: 'http://www.example.com/test/pdfs/qwerty.pdf',
+      });
+      var docBaseUrlPromise = docBaseUrlLoadingTask.promise.then(
+          function (pdfDoc) {
+        return pdfDoc.getPage(1).then(function (pdfPage) {
+          return pdfPage.getAnnotations();
+        });
+      });
+
+      var invalidDocBaseUrlLoadingTask = PDFJS.getDocument({
+        url: url,
+        docBaseUrl: 'qwerty.pdf',
+      });
+      var invalidDocBaseUrlPromise = invalidDocBaseUrlLoadingTask.promise.then(
+          function (pdfDoc) {
+        return pdfDoc.getPage(1).then(function (pdfPage) {
+          return pdfPage.getAnnotations();
+        });
+      });
+
+      Promise.all([defaultPromise, docBaseUrlPromise,
+                   invalidDocBaseUrlPromise]).then(function (data) {
+        var defaultAnnotations = data[0];
+        var docBaseUrlAnnotations = data[1];
+        var invalidDocBaseUrlAnnotations = data[2];
+
+        expect(defaultAnnotations[0].url).toBeUndefined();
+        expect(defaultAnnotations[0].unsafeUrl).toEqual(
+          '../../0021/002156/215675E.pdf#nameddest=15');
+
+        expect(docBaseUrlAnnotations[0].url).toEqual(
+          'http://www.example.com/0021/002156/215675E.pdf#nameddest=15');
+        expect(docBaseUrlAnnotations[0].unsafeUrl).toEqual(
+          '../../0021/002156/215675E.pdf#nameddest=15');
+
+        expect(invalidDocBaseUrlAnnotations[0].url).toBeUndefined();
+        expect(invalidDocBaseUrlAnnotations[0].unsafeUrl).toEqual(
+          '../../0021/002156/215675E.pdf#nameddest=15');
+
+        defaultLoadingTask.destroy();
+        docBaseUrlLoadingTask.destroy();
+        invalidDocBaseUrlLoadingTask.destroy();
+        done();
+      }).catch(function (reason) {
+        done.fail(reason);
+      });
+    });
+
     it('gets text content', function (done) {
       var defaultPromise = page.getTextContent();
       var parametersPromise = page.getTextContent({
