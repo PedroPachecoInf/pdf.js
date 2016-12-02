@@ -12,3 +12,5 @@ O PDF.js é um visualizador de Portable Document Format (PDF), construído  em J
 [Relatório 2](https://github.com/PedroPachecoInf/pdf.js/blob/ESOF/ESOF/Relat%C3%B3rio%202.md)
 
 [Relatório 3](./Relatório 3.md)
+
+[Relatório 4](./Relatório 4.md)
