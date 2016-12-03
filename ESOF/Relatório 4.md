@@ -14,10 +14,47 @@ A verificação e validação permitem-nos compreender se o projeto está a ser 
 
 ## Estatisticas e Análises dos Testes
 
-Para verificarmos a validade do software, um dos métodos por excelência são os testes unitários.
+Para verificarmos a validade do software, um dos métodos por excelência são os testes.
 Assim sendo, procurámos ao máximo analizar as várias capacidades destes testes e também onde estão as suas limitações.
 
+Os testes estão divididos em 5 categorias que testam diferentes aspetos:
+
+- **load**: verifica se o PDF é carregado sem crashar
+
+- **eq**: verifica detalhes relacionados com a renderização
+
+- **text**: verifica detalhes relacionados com a *textLayer*
+
+- **annotations**: verifica detalhes relacionados com a *annotationLayer* (e a página subjacente)
+
+- **fbf**: um teste *forward-back-forward*
+
+- **unit tests**: 378 testes unitários *Jasmine* (corridos separadamente dos acima), também divididos em categorias de acordo com os aspetos a testar:
+..- *primitives* (33)
+..- *CFFParser* (20)
+..- *CFFCompiler* (2)
+..- *Type1Parser* (10)
+..- *Fonts* (1)
+..- *unicode* (11)
+..- *function* (79)
+..- *crypto* (33)
+..- *CipherTransformFactory* (15)
+..- *evaluator* (17)
+..- *stream* (8)
+..- *parser* (12)
+..- *api* (53)
+..- *metadata* (2)
+..- *ui_utils* (11)
+..- *util* (20)
+..- *cmap* (12)
+..- *Annotation layer* (55)
+..- *network* (3)
+..- *dom_utils* (4)
+
 ### Quantidade de testes
+
+Ainda é preciso, tendo em conta a lista acima???
+Provavelmente era mais fácil completar a lista acima
 
 ### Cobertura dos testes
 
