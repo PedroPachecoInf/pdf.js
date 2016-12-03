@@ -740,15 +740,44 @@ var PredictorStream = (function PredictorStreamClosure() {
     var i;
 
     if (bits === 1) {
-      for (i = 0; i < rowBytes; ++i) {
-        var c = rawBytes[i];
+      var complement = 0;
+      var outbuf = 0;
+      var j = 0;
+
+      // Working cycle, but developed by us, going for testing
+      for(i=0; i < rowBytes; ++i)
+      {
+        debugger;
+
+        var c = (rawBytes[i] & 0xFF);
         inbuf = (inbuf << 8) | c;
-        // bitwise addition is exclusive or
-        // first shift inbuf and then add
-        buffer[pos++] = (c ^ (inbuf >> colors)) & 0xFF;
-        // truncate inbuf (assumes colors < 16)
-        inbuf &= 0xFFFF;
+
+        for(j=7; j>=0; --j)
+        {
+            complement = (complement + (inbuf >> j)) & 0x1;
+            outbuf = (outbuf << 1) | complement;
+        }
+  
+        buffer[pos++] = (outbuf & 0xFF);
       }
+
+      // Working cycle, but more complex
+      /*for (i = 0; i < columns; ++i) {
+          if (inbits < 1) {
+            inbuf = (inbuf << 8) | (rawBytes[j++] & 0xFF);
+            inbits += 8;
+          }
+          compArray = (compArray +
+                           (inbuf >> (inbits - 1))) & 0x1;
+          inbits -= 1;
+          outbuf = (outbuf << 1) | compArray;
+          outbits += 1;
+          if (outbits >= 8) {
+            buffer[pos++] = (outbuf >> (outbits - 8)) & 0xFF;
+            outbits -= 8;
+          }
+      }*/
+    
     } else if (bits === 8) {
       for (i = 0; i < colors; ++i) {
         buffer[pos++] = rawBytes[i];
