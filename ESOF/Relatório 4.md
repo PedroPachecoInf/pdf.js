@@ -130,7 +130,7 @@ A forma que o pdf.js tem de ler uma imagem é determinar o formato de imagem e d
 
 O que acontece é que a imagem é lida com defeitos a nível de resolução e com as cores invertidas (*background* preto e letras brancas):
 
-<img src=".\Relatório 4\PDF-bugged.png" alt="bugged PDF">
+<img src=".\Relatório 4\PDF-Bugged.png" alt="bugged PDF">
 
 Ao lermos a especificação do formato TIFF, percebemos que a leitura dos bytes da imagem estava a ser feita de forma incorreta. No código original, lê-se um byte inteiro, e faz-se a soma das componentes de cada cor através do XOR. 
 
