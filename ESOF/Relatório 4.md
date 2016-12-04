@@ -26,33 +26,33 @@ O grau de observabilidade de um software é maior quanto maior for a facilidade 
 
 Além disso, caso se queira correr apenas testes unitários, o pdf.js utiliza a ferramenta Jasmine que, através do browser, mostra os testes unitários realizados, assim como o resultado de cada teste:
 
-<img src=".\Relatório 4\jasmine.png" alt="jasmine example">
+<img src=".\Relatório 4\jasmine1.png" alt="jasmine example">
 
 ### Isolabilidade
 
-Sendo a arquitetura do pdf.js modular, a sua isolabilidade vai depender de módulo para módulo, tal como a controlabilidade. Quantas mais dependências um módulo tiver, mais difícil é isolar os seus testes, pois sofre influências de várias partes. Por exemplo, se um determinado módulo necessitar de funções de 5 outros módulos para executar uma função sua, ao testar essa função é difícil perceber se um erro que surja advém do próprio módulo ou de um módulo exterior.
+Sendo a arquitetura do pdf.js modular, a sua isolabilidade vai depender de módulo para módulo, tal como a controlabilidade. Quantas mais dependências um módulo tiver, mais difícil é isolar os seus testes, pois mais influências sofre de outras partes. Por exemplo, se um determinado módulo necessitar de incluir funções de 5 módulos para executar uma função sua, ao testar essa função será difícil perceber se um erro que surja advém do próprio módulo ou de um dos módulos externos.
 
 ### Separação de tarefas
 
-Por estar desenhado por módulos, a separação de tarefas do pdf.js está muito bem definida. Tanto os nomes dos ficheiros de JavaScript como os nomes das funções contribuem para o entendimento daquilo que aquela secção de código faz. Tarefas que sejam mais complexas são divididas em tarefas menores, de forma a delinear ainda mais a arquitetura modular. Por exemplo, a função do ficheiro "stream.js", que lê uma imagem e faz o seu *decode* chama, consoante o tipo de imagem, funções diferentes, para retornar o resultado. Essas funções, por sua vez, são divididas em outras menos complexas, que lêem separadamente o cabeçalho e o corpo da imagem.
+Por estar desenhado por módulos, a separação de tarefas do pdf.js está muito bem definida. Tanto os nomes dos ficheiros de JavaScript como os nomes das funções contribuem para o entendimento daquilo que aquela secção de código faz. As tarefas mais complexas são divididas em tarefas menores repartidas por funções, de forma a delinear ainda mais a arquitetura modular. Por exemplo, a função do ficheiro "stream.js", que lê uma imagem e faz o seu *decode* chama, consoante o tipo de imagem, funções diferentes, para retornar o resultado. Essas funções, por sua vez, são divididas em outras menos complexas, que lêem separadamente o cabeçalho e o corpo da imagem. 
 
 ### Percetibilidade
 
-O pdf.js peca em termos de documentação, visto que não há uma definição explícita daquilo que cada módulo e função faz. 
+O pdf.js peca em termos de documentação, visto que não estão disponíveis definições explícitas daquilo que cada módulo e função faz. 
 
-No entanto, graças à sua eficiente separação de tarefas e nomenclatura de funções/módulos, é possível perceber o que o código faz simplesmente lendo-o. A sua sintaxe é bem estruturada e alguns comentários guiam o leitor por partes mais complicadas de código.
+No entanto, graças à sua eficiente separação de tarefas e nomenclatura de funções/módulos, é possível perceber o que o código faz simplesmente lendo-o. A sua sintaxe é bem estruturada e alguns comentários guiam o programador por partes mais complicadas de código.
 
 ### Heterogeneidade
 
-A heterogeneidade do pdf.js é baixa, pois não há grande diversidade nas ferramentas que usa. Não inclui nenhuma framework nem biblioteca de funções. Apenas faz uso das funcionalidades de um browser, mas por ser escrito em JavaScript, isto não tem impacto na heterogeneidade. Por isso mesmo, apenas é necessário um tipo de ferramenta para cada forma de teste:
+A heterogeneidade do pdf.js é baixa, pois não há grande diversidade nas ferramentas que usa. Não inclui nenhuma framework (a não ser para testes) nem bibliotecas de funções invulgares. Apenas faz uso das funcionalidades de um browser e do JavaScript, que não tem impacto na heterogeneidade. Por isso mesmo, apenas é necessário um tipo de ferramenta para cada forma de teste:
 
 - Testes unitários: [Jasmine](https://jasmine.github.io/) e [JS Test Driver](https://code.google.com/archive/p/js-test-driver/) para display em HTML dos testes;
 - Teste de regressão: NodeJS para criar um servidor capaz de hospedar o pdf.js e gerar os *snapshots* para comparação.
 
 ## Estatisticas e Análises dos Testes
 
-Para verificarmos a validade do software, um dos métodos por excelência são os testes.
-Assim sendo, procurámos ao máximo analizar as várias capacidades destes testes e também onde estão as suas limitações.
+Para efetuar a verificação do software, um dos métodos por excelência são os testes.
+Assim sendo, procurámos ao máximo analisar as várias capacidades destes testes e também onde estão as suas limitações.
 
 Os testes estão divididos em 5 categorias que testam diferentes aspetos:
 
@@ -92,15 +92,17 @@ Os testes estão divididos em 5 categorias que testam diferentes aspetos:
 
 Os testes "eq" (equal) são utilizados para verificar se o código alterado traz alguma **regressão**, isto é, se alterou outros aspetos que diminuam a qualidade do programa. 
 
-A Mozilla utiliza *snapshots* de PDFs que se sabe estarem corretamente renderizados e compara-os com os PDFs gerados com o novo código. Se os resultados forem iguais, o código não traz nenhuma regressão em relação ao render desses ficheiros.
+São utilizados *snapshots* de PDFs que se sabe estarem corretamente renderizados e compara-se com os PDFs gerados com o novo código. Se os resultados forem iguais, o código não traz nenhuma regressão em relação ao render desses ficheiros.
+
+Esta ferramenta de teste é particularmente útil para detetar quaisquer discrepâncias mínimas originadas ao mexer no código.
 
 ### Quantidade de testes
 
-A suite completa de testes fornecida pelo pdf.js é corrida utilizando o comando "gulp test", que cria um processo no browser que executa todos o ficheiros do diretório "test".
+A suite completa de testes fornecida pelo pdf.js é corrida utilizando o comando "gulp test", que cria um processo no browser que executa todos os ficheiros do diretório "test".
 
-Há 378 testes unitários, como já foi referido, assim como 436 *snapshots* de PDF para testar regressões e 6 ficheiros de testes relativos a fontes de texto. Tudo isto demora cerca de 15 minutos a executar.
+Há 378 testes unitários, como já foi referido, assim como cerca 436 *snapshots* de PDF para testar regressões e 6 ficheiros de testes relativos a fontes de texto. 
 
-Podemos assumir que, pela integridade da Mozilla, os testes são todos necessários e testam partes independentes. Como o pdf.js é um sofwtare relativamente simples, podemos afirmar que é bem robusto a nível de testabilidade.
+Podemos assumir, pela exigência da Mozilla, que os testes são todos necessários e testam partes independentes. Como o pdf.js é um sofwtare relativamente simples, a quantidade de testes que possui torna-o decente a nível de testabilidade.
 
 ### Cobertura dos testes
 
@@ -172,7 +174,7 @@ Esta implementação é mais custosa em processamento, pois lê cada bit separad
 
  <img src=".\Relatório 4\PDF-fixed.png" alt="fixed PDF">
 
-No momento da escrita deste relatório, o nosso grupo encontrava-se em comunicação com os responsáveis pelo pdf.js para a possível incorporação deste *fix* no projeto original, via IRC. Se obtivermos luz verde, avançamos com o *pull request*. 
+No momento da escrita deste relatório, o nosso grupo encontrava-se em comunicação com os responsáveis pelo pdf.js para a possível incorporação deste *fix* no projeto original, via IRC. Se obtivermos luz verde, avançamos com o *pull request*.
 
 ## Contribuição
 
