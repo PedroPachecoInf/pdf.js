@@ -141,7 +141,7 @@ if (bits === 1) {
 }
 ``` 
 
-Esta implementação é mais custosa em processamento, pois lê cada bit separadamente, poussindo 8 vezes mais iterações que a original. No entanto é apenas 50% mais lenta e resolve o problema da resolução e dar cor, mostrando o pdf como é suposto:
+Esta implementação é mais custosa em processamento, pois lê cada bit separadamente, poussindo 8 vezes mais iterações que a original. No entanto é apenas 50% mais lenta e resolve o problema da resolução e da cor, mostrando o pdf como é suposto:
 
  <img src=".\Relatório 4\PDF-fixed.png" alt="fixed PDF">
 
