@@ -61,13 +61,19 @@ Os testes estão divididos em 5 categorias que testam diferentes aspetos:
   - *network* (3)
   - *dom_utils* (4)
 
+### Testes *eq*
+
+Os testes "eq" (equal) são utilizados para verificar se o código alterado traz alguma **regressão**, isto é, se alterou outros aspetos que diminuam a qualidade do programa. 
+
+A Mozilla utiliza *snapshots* de PDFs que se sabe estarem corretamente renderizados e compara-os com os PDFs gerados com o novo código. Se os resultados forem iguais, o código não traz nenhuma regressão em relação ao render desses ficheiros.
+
 ### Quantidade de testes
 
-[Comentario]
+A suite completa de testes fornecida pelo pdf.js é corrida utilizando o comando "gulp test", que cria um processo no browser que executa todos o ficheiros do diretório "test".
 
-Ainda é preciso, tendo em conta a lista acima???
+Há 378 testes unitários, como já foi referido, assim como 436 *snapshots* de PDF para testar regressões e 6 ficheiros de testes relativos a fontes de texto. Tudo isto demora cerca de 15 minutos a executar.
 
-Provavelmente era mais fácil completar a lista acima. Digam o que acham
+Podemos assumir que, pela integridade da Mozilla, os testes são todos necessários e testam partes independentes. Como o pdf.js é um sofwtare relativamente simples, podemos afirmar que é bem robusto a nível de testabilidade.
 
 ### Cobertura dos testes
 
