@@ -174,7 +174,7 @@ Esta implementação é mais custosa em processamento, pois lê cada bit separad
 
  <img src=".\Relatório 4\PDF-fixed.png" alt="fixed PDF">
 
-No momento da escrita deste relatório, o nosso grupo encontrava-se em comunicação com os responsáveis pelo pdf.js para a possível incorporação deste *fix* no projeto original, via IRC. Se obtivermos luz verde, avançamos com o *pull request*.
+No momento da escrita deste relatório, o nosso grupo encontrava-se em comunicação com os responsáveis pelo pdf.js para a possível incorporação deste *fix* no projeto original, através de um [pull request](https://github.com/mozilla/pdf.js/pull/7869).
 
 ## Contribuição
 
