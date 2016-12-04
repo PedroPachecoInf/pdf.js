@@ -174,8 +174,10 @@ No momento da escrita deste relatório, o nosso grupo encontrava-se em comunica�
 
 ## Contribuição
 
-BOTA TRABALHAR PESSOAL!
+Todos os membros contribuiram de forma igual para a elaboração do relatório.
 
 ## Referências
 
 https://en.wikipedia.org/wiki/Software_testability -  consultado a 2 de Dezembro de 2016
+http://robertvbinder.com/software-testability-part-2-controllability-and-observability/ - consultado a 3 de Dezembro de 2016
+https://moodle-arquivo.ciencias.ulisboa.pt/1415/pluginfile.php/108074/mod_resource/content/1/vvs-slides-13.pdf - consultado a 3 de Dezembro de 2016
