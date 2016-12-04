@@ -4,9 +4,9 @@
 
 ## Introdução
 
-Neste relatório, vamos fazer uma análise aos testes de software no PDF.js.Testar o software significa correr testes específicos para cada parte do programa, e observar se ele se comporta da forma esperada, ou se não, foi decoberto um *bug*.
+Neste relatório, vamos fazer uma análise aos testes de software no PDF.js. Testar o software significa correr testes específicos para cada parte do programa, e observar se ele se comporta da forma esperada, ou se não, foi descoberto um *bug*.
 
-Sendo assim, vamos avaliar a qualidade e a quantidade dos testes de software,testes estes que são disponibilizados pelos *developers* do projeto.
+Sendo assim, vamos avaliar a qualidade e a quantidade dos testes de software, testes estes que são disponibilizados pelos *developers* do projeto.
 
 A verificação e validação permitem-nos compreender se o projeto está a ser construído corretamente e se tem as funcionalidades corretas.
 
@@ -24,7 +24,9 @@ A controlabilidade determina o trabalho necessário para testar os casos de util
 
 O grau de observabilidade de um software é maior quanto maior for a facilidade em verificar os resultados de um teste. A suite de testes do pdf.js é toda automaticamente corrida a partir do comando "gulp test", mostrando em tempo de execução os testes que passam e que falham, pelo que é extremamente fácil observar o resultado de testes incluídos no projeto. 
 
-Além disso, caso se queira correr apenas testes unitários, o pdf.js utiliza a ferramenta Jasmine que, através do browser, mostra os testes unitários realizados, assim como o resultado de cada teste.
+Além disso, caso se queira correr apenas testes unitários, o pdf.js utiliza a ferramenta Jasmine que, através do browser, mostra os testes unitários realizados, assim como o resultado de cada teste:
+
+<img src=".\Relatório 4\jasmine.png" alt="jasmine example">
 
 ### Isolabilidade
 
@@ -45,7 +47,7 @@ No entanto, graças à sua eficiente separação de tarefas e nomenclatura de fu
 A heterogeneidade do pdf.js é baixa, pois não há grande diversidade nas ferramentas que usa. Não inclui nenhuma framework nem biblioteca de funções. Apenas faz uso das funcionalidades de um browser, mas por ser escrito em JavaScript, isto não tem impacto na heterogeneidade. Por isso mesmo, apenas é necessário um tipo de ferramenta para cada forma de teste:
 
 - Testes unitários: [Jasmine](https://jasmine.github.io/) e [JS Test Driver](https://code.google.com/archive/p/js-test-driver/) para display em HTML dos testes;
-- Teste de regressão: NodeJS para criar um servidor capaz de hospedar o pdf.js
+- Teste de regressão: NodeJS para criar um servidor capaz de hospedar o pdf.js e gerar os *snapshots* para comparação.
 
 ## Estatisticas e Análises dos Testes
 
