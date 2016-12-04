@@ -77,6 +77,11 @@ Podemos assumir que, pela integridade da Mozilla, os testes são todos necessár
 
 ### Cobertura dos testes
 
+De modo a analizar a qualidade dos testes foi utilizada a ferramenta JSCover. Após a sua utilização obteve-se uma percentagem de cobertura total de apenas 59%, o que encontra abaixo das espetativas.
+
+  <img src=".\Relatório 4\coverage1.png" alt="coverage1">
+  <img src=".\Relatório 4\coverage2.png" alt="coverage2">
+
 ### "Flaky Tests"
 
 Ao longo das várias vezes que corremos a framework de testes, os resultados destes foram consistentes, e portanto não encontramos nenhum *flaky test*.
