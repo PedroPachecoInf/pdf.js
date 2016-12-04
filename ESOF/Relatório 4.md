@@ -5,47 +5,18 @@
 ## Introdução
 
 Neste relatório, vamos fazer uma análise aos testes de software no PDF.js.Testar o software significa correr testes específicos para cada parte do programa, e observar se ele se comporta da forma esperada, ou se não, foi decoberto um *bug*.
+
 Sendo assim, vamos avaliar a qualidade e a quantidade dos testes de software,testes estes que são disponibilizados pelos *developers* do projeto.
+
 A verificação e validação permitem-nos compreender se o projeto está a ser construído corretamente e se tem as funcionalidades corretas.
+
 Faremos então umas estatísticas relativas aos testes e depois apresentaremos uma possível solução para um dos *bugs* do programa.
 
-## ???
+## Testabilidade e revisão de software
 
-[TO DO]
-[Tb tem de se dizer que, depois de um pull request, sao executados testes automaticos e fazem-se reviews]
+### Controlabilidade
 
 
-## Estatisticas e Análises dos Testes
-
-Para verificarmos a validade do software, um dos métodos por excelência são os testes.
-Assim sendo, procurámos ao máximo analizar as várias capacidades destes testes e também onde estão as suas limitações.
-
-Os testes estão divididos em 5 categorias que testam diferentes aspetos:
-
-- **load**: verifica se o PDF é carregado sem crashar
-
-- **eq**: verifica detalhes relacionados com a renderização
-
-- **text**: verifica detalhes relacionados com a *textLayer*
-
-- **annotations**: verifica detalhes relacionados com a *annotationLayer* (e a página subjacente)
-
-- **fbf**: um teste *forward-back-forward*
-
-- **unit tests**: 378 testes unitários *Jasmine* (corridos separadamente dos acima), também divididos em categorias de acordo com os aspetos a testar:
-  - *primitives* (33)
-  - *CFFParser* (20)
-  - *CFFCompiler* (2)
-  - *Type1Parser* (10)# Verificação e Validação
-
-## Introdução
-
-Neste relatório, vamos fazer uma análise aos testes de software no PDF.js.Testar o software significa correr testes específicos para cada parte do programa, e observar se ele se comporta da forma esperada, ou se não, foi decoberto um *bug*.
-Sendo assim, vamos avaliar a qualidade e a quantidade dos testes de software,testes estes que são disponibilizados pelos *developers* do projeto.
-A verificação e validação permitem-nos compreender se o projeto está a ser construído corretamente e se tem as funcionalidades corretas.
-Faremos então umas estatísticas relativas aos testes e depois apresentaremos uma possível solução para um dos *bugs* do programa.
-
-## ???
 
 [TO DO]
 [Tb tem de se dizer que, depois de um pull request, sao executados testes automaticos e fazem-se reviews]
@@ -171,5 +142,4 @@ BOTA TRABALHAR PESSOAL!
 
 ## Referências
 
-
-  -
+https://en.wikipedia.org/wiki/Software_testability -  consultado a 2 de Dezembro de 2016
