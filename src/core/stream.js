@@ -747,9 +747,8 @@ var PredictorStream = (function PredictorStreamClosure() {
 
       // Working cycle, tested and 3 to 5 times faster than the else case
       for(i=0; i < rowBytes; ++i) {
-
-        var c = (rawBytes[i] & 0xFF);
-        inbuf = (inbuf << 8) | c;
+        
+        inbuf = (inbuf << 8) | (rawBytes[i] & 0xFF);
 
         for(bitOrder=7; bitOrder>=0; --bitOrder) {
             complement = (complement + (inbuf >> bitOrder)) & 0x1;
