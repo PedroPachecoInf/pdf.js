@@ -741,6 +741,7 @@ var PredictorStream = (function PredictorStreamClosure() {
 
 
     if (bits === 1) {
+      console.time('Function1');
       var complement = 0;
       var bitOrder = 0;
 
@@ -751,7 +752,7 @@ var PredictorStream = (function PredictorStreamClosure() {
         inbuf = (inbuf << 8) | c;
 
         for(bitOrder=7; bitOrder>=0; --bitOrder) {
-            complement = (complement + (inbuf >> j)) & 0x1;
+            complement = (complement + (inbuf >> bitOrder)) & 0x1;
             outbuf = (outbuf << 1) | complement;
         }
   
@@ -774,7 +775,9 @@ var PredictorStream = (function PredictorStreamClosure() {
             outbits -= 8;
           }
       }*/
-    
+      
+      console.timeEnd('Function1');
+
     } else if (bits === 8) {
       for (i = 0; i < colors; ++i) {
         buffer[pos++] = rawBytes[i];
