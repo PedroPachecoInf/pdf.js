@@ -739,21 +739,18 @@ var PredictorStream = (function PredictorStreamClosure() {
     var pos = bufferLength;
     var i;
 
+
     if (bits === 1) {
       var complement = 0;
-      var outbuf = 0;
-      var j = 0;
+      var bitOrder = 0;
 
       // Working cycle, but developed by us, going for testing
-      for(i=0; i < rowBytes; ++i)
-      {
-        debugger;
+      for(i=0; i < rowBytes; ++i) {
 
         var c = (rawBytes[i] & 0xFF);
         inbuf = (inbuf << 8) | c;
 
-        for(j=7; j>=0; --j)
-        {
+        for(bitOrder=7; bitOrder>=0; --bitOrder) {
             complement = (complement + (inbuf >> j)) & 0x1;
             outbuf = (outbuf << 1) | complement;
         }
