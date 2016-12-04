@@ -745,7 +745,7 @@ var PredictorStream = (function PredictorStreamClosure() {
       var complement = 0;
       var bitOrder = 0;
 
-      // Working cycle, but developed by us, going for testing
+      // Working cycle, tested and 3 to 5 times faster than the else case
       for(i=0; i < rowBytes; ++i) {
 
         var c = (rawBytes[i] & 0xFF);
@@ -778,7 +778,20 @@ var PredictorStream = (function PredictorStreamClosure() {
       
       console.timeEnd('Function1');
 
-    } else if (bits === 8) {
+      console.time('Function3');
+      for (i = 0; i < rowBytes; ++i) {
+        var c = rawBytes[i];
+        inbuf = (inbuf << 8) | c;
+        // bitwise addition is exclusive or
+        // first shift inbuf and then add
+        buffer[pos++] = (c ^ (inbuf >> colors)) & 0xFF;
+        // truncate inbuf (assumes colors < 16)
+        inbuf &= 0xFFFF;
+      }
+      console.timeEnd('Function3');
+
+    } //else 
+    if (bits === 8) {
       for (i = 0; i < colors; ++i) {
         buffer[pos++] = rawBytes[i];
       }
@@ -787,6 +800,7 @@ var PredictorStream = (function PredictorStreamClosure() {
         pos++;
       }
     } else {
+      console.time('Function2');
       var compArray = new Uint8Array(colors + 1);
       var bitMask = (1 << bits) - 1;
       var j = 0, k = bufferLength;
@@ -813,6 +827,7 @@ var PredictorStream = (function PredictorStreamClosure() {
                       (inbuf & ((1 << (8 - outbits)) - 1));
       }
     }
+    console.timeEnd('Function2');
     this.bufferLength += rowBytes;
   };
 
