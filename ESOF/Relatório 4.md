@@ -14,13 +14,38 @@ Faremos então umas estatísticas relativas aos testes e depois apresentaremos u
 
 ## Testabilidade e revisão de software
 
+O pdf.js possui uma suite de testes no seu respositório que é atualizada ao longo do seu desenvolvimento. Os testes avaliam todas as componentes do pdf.js: o *render*, *display* e a interface gráfica, sendo mais focados no *render*. É essencial para o pdf.js que o seu grau de testabilidade seja elevado, pois apesar de estar maturo, o programa continua a precisar de updates. Para facilitar este processo de evolução, as ferramentas de testes devem permitir que qualquer erro seja detetado facilmente.
+
 ### Controlabilidade
 
+A controlabilidade determina o trabalho necessário para testar os casos de utilização de uma CUT (*Component Under Test*), ou seja, o quão fácil é obter o input necessário para replicar o funcionamento da CUT. No caso do pdf.js é algo bastante simples, visto que o input necessário para testar **todas** as suas funcionalidades é um simples ficheiro de PDF. Para testar componentes individualmente basta isolar um pedaço de um PDF (uma stream de informação) e usá-la como argumento desse módulo. A controlabilidade diminui com o grau de dependência do módulo que está a ser testado, no entanto no pdf.js não há módulos com dependências tão complexas que aumentem significativamente a sua controlabilidade.
 
+### Observabilidade
 
-[TO DO]
-[Tb tem de se dizer que, depois de um pull request, sao executados testes automaticos e fazem-se reviews]
+O grau de observabilidade de um software é maior quanto maior for a facilidade em verificar os resultados de um teste. A suite de testes do pdf.js é toda automaticamente corrida a partir do comando "gulp test", mostrando em tempo de execução os testes que passam e que falham, pelo que é extremamente fácil observar o resultado de testes incluídos no projeto. 
 
+Além disso, caso se queira correr apenas testes unitários, o pdf.js utiliza a ferramenta Jasmine que, através do browser, mostra os testes unitários realizados, assim como o resultado de cada teste.
+
+### Isolabilidade
+
+Sendo a arquitetura do pdf.js modular, a sua isolabilidade vai depender de módulo para módulo, tal como a controlabilidade. Quantas mais dependências um módulo tiver, mais difícil é isolar os seus testes, pois sofre influências de várias partes. Por exemplo, se um determinado módulo necessitar de funções de 5 outros módulos para executar uma função sua, ao testar essa função é difícil perceber se um erro que surja advém do próprio módulo ou de um módulo exterior.
+
+### Separação de tarefas
+
+Por estar desenhado por módulos, a separação de tarefas do pdf.js está muito bem definida. Tanto os nomes dos ficheiros de JavaScript como os nomes das funções contribuem para o entendimento daquilo que aquela secção de código faz. Tarefas que sejam mais complexas são divididas em tarefas menores, de forma a delinear ainda mais a arquitetura modular. Por exemplo, a função do ficheiro "stream.js", que lê uma imagem e faz o seu *decode* chama, consoante o tipo de imagem, funções diferentes, para retornar o resultado. Essas funções, por sua vez, são divididas em outras menos complexas, que lêem separadamente o cabeçalho e o corpo da imagem.
+
+### Percetibilidade
+
+O pdf.js peca em termos de documentação, visto que não há uma definição explícita daquilo que cada módulo e função faz. 
+
+No entanto, graças à sua eficiente separação de tarefas e nomenclatura de funções/módulos, é possível perceber o que o código faz simplesmente lendo-o. A sua sintaxe é bem estruturada e alguns comentários guiam o leitor por partes mais complicadas de código.
+
+### Heterogeneidade
+
+A heterogeneidade do pdf.js é baixa, pois não há grande diversidade nas ferramentas que usa. Não inclui nenhuma framework nem biblioteca de funções. Apenas faz uso das funcionalidades de um browser, mas por ser escrito em JavaScript, isto não tem impacto na heterogeneidade. Por isso mesmo, apenas é necessário um tipo de ferramenta para cada forma de teste:
+
+- Testes unitários: [Jasmine](https://jasmine.github.io/) e [JS Test Driver](https://code.google.com/archive/p/js-test-driver/) para display em HTML dos testes;
+- Teste de regressão: NodeJS para criar um servidor capaz de hospedar o pdf.js
 
 ## Estatisticas e Análises dos Testes
 
