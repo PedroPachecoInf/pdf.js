@@ -15,6 +15,7 @@ Ao interpretar o código dedicado à interpretação dessas imagens, descobrimos
 ### Descrição detalhada da funcionalidade
 
 > "A bilevel image contains two colors—black and white. TIFF allows an application to write out bilevel data in either a white-is-zero or black-is-zero format. The field that records this information is called PhotometricInterpretation."
+
 > *TIFF specification 6.0*
 
 Como tal, a forma como o pdf.js lê um bit depende da tag *PhotmetricInterpretation*, que quando tem o valor igual a 0 dita que um bit a 0 representa a cor branca e que quando tem o valor igual a 1 dita que um bit a 0 tem a cor preta.
@@ -55,4 +56,12 @@ if (bits === 1) {
 ```
 
 Este código não está implementado, de momento, ainda não arranjámos forma de obter a *tag* a partir do PDF. No entanto, é ilustrativo do que faremos com esse valor assim que o obtivermos.
+
+## Submissão da funcionalidade
+
+Como a resolução do *bug* e a *feature* estão intimamente ligados, a sua sugestão foi feita no mesmo [*pull request*](https://github.com/mozilla/pdf.js/pull/7869), sendo que estamos em comunicação com a equipa do pdf.js não só através do GitHub, mas também através do seu canal IRC, para discutir melhoramentos em termos de eficiência de processamento e como obter a informação que resta para implementar a funcionalidade.
+
+## Contribuição
+
+Todos os elementos do grupo contribuíram de forma equivalente para a produção deste relatório.
 
