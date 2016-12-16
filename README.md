@@ -1,5 +1,7 @@
 # PDF.js
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/PedroPachecoInf/pdf.js)](https://bettercodehub.com)
+
 PDF.js is a Portable Document Format (PDF) viewer that is built with HTML5.
 
 PDF.js is community-driven and supported by Mozilla Labs. Our goal is to
