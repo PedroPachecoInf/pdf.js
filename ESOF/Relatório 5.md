@@ -4,7 +4,19 @@
 
 ## Introdução
 
-O pdf.js é uma aplicação que, como temos vindo a referir, já se encontra bem maturada. Com um período de desenvolvimento de mais de 4 anos e um âmbito de funcionalidades muito restrito, são muito poucos os *features* que podem ser adicionados a este leitor. No entanto, o projeto continua aberto ao desenvolvimento de novas funcionalidades, que são sobretudo pressionadas pelo aparecimento de uma nova plataforma que utilize o leitor.
+O pdf.js é uma aplicação que, como temos vindo a referir, já se encontra bem maturada. Com um período de desenvolvimento de mais de 4 anos e um âmbito de funcionalidades muito restrito, são muito poucos os *features* que podem ser adicionados a este leitor. No entanto, o projeto continua aberto ao desenvolvimento de novas funcionalidades, que são sobretudo pressionadas pela evolução das plataformas suportadas pelo leitor.
+
+## Manutenção do pdf.js
+
+[TODO: falar da importância da manutenção no pdf.js (por ex., estar sempre a par com as evoluções do Mozilla Firefox). Comentar que por causa de o método usado ser o Agile, o software já está preparado para a evolução/mudança.]
+
+### Implementação de alterações
+
+[TODO: ver slides 10 e 11 da evolução de software e falar do processo de implementação de alterações]
+
+### Análise métrica do *Better Code Hub*
+
+[TODO: correr o repositório no Better Code Hub e meter prints dos resultados, assim como comentá-los e como se poderia melhorar o que está mal (muito breve)]
 
 ## Identificação da nova funcionalidade
 
