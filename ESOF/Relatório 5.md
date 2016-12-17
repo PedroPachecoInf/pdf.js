@@ -16,7 +16,39 @@ O pdf.js é uma aplicação que, como temos vindo a referir, já se encontra bem
 
 ### Análise métrica do *Better Code Hub*
 
+![Write Short Units of Code](./Relatório 5/BCH-ShortUnits.png)
+
+
+![Write Simple Units of Code](./Relatório 5/BCH-SimpleUnits.png)
+
+
+![Write Code Once](./Relatório 5/BCH-CodeOnce.png)
+
+
+![Keep Unit Interfaces Small](./Relatório 5/BCH-InterfacesSmall.png)
+
+
+![Separate Concerns in Modules](./Relatório 5/BCH-SeparateConcerns.png)
+
+
+![Couple Architecture Components Loosely](./Relatório 5/BCH-CompsLoosely.png)
+
+
+![Keep Architecture Components Balanced](./Relatório 5/BCH-CompsBalanced.png)
+
+
+![Keep Your Codebase Small](./Relatório 5/BCH-CodebaseSmall.png)
+
+
+![Automate Tests](./Relatório 5/BCH-AutomateTests.png)
+
+
+![Write Clean Code](./Relatório 5/BCH-CleanCode.png)
+
+
+
 [TODO: correr o repositório no Better Code Hub e meter prints dos resultados, assim como comentá-los e como se poderia melhorar o que está mal (muito breve)]
+
 
 ## Identificação da nova funcionalidade
 
