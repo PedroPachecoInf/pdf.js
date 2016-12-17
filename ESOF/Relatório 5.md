@@ -12,7 +12,11 @@ O pdf.js é uma aplicação que, como temos vindo a referir, já se encontra bem
 
 ### Implementação de alterações
 
-[TODO: ver slides 10 e 11 da evolução de software e falar do processo de implementação de alterações]
+[TODO: ver slides 10 e 11 da evolução de software e falar do processo de implementação de alterações] Temporario, depois acabo
+O pdf.js, apesar de funcional, está longe de alcançar as fases finais do desenvolvimento, encontrando-se numa fase de evolução com o constante aparecimento de novos requesitos, e consequentemente, novas funcionalidades.
+
+Novas funcionalidades são propostas maioritariamente pelos utilizadores, como uma *issue*. A equipa responsável pelo projecto trata de analisar a *user history*, tentando expor informação util para quem for resolver o problema, permitindo... 
+
 
 ### Análise métrica do *Better Code Hub*
 
