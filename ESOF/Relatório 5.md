@@ -58,11 +58,8 @@ Como já foi visto no relatório anterior a cobertura dos testes deixa um pouco 
 
 
 ![Write Clean Code](./Relatório 5/BCH-CleanCode.png)
-Graças a um cuidado muito apertado por parte da equipa da Mozilla e pela utilização de um [*Style Guide*](https://github.com/mozilla/pdf.js/wiki/Style-Guide), o código consegue manter-se sempre bastante limpo e sem *smells*.
+Graças a um cuidado muito apertado por parte da equipa da Mozilla e pela utilização de um [*Style Guide*](https://github.com/mozilla/pdf.js/wiki/Style-Guide), o código consegue manter-se sempre bastante limpo e sem *code smells*.
 
-
-
-[TODO: correr o repositório no Better Code Hub e meter prints dos resultados, assim como comentá-los e como se poderia melhorar o que está mal (muito breve)]
 
 
 ## Identificação da nova funcionalidade
