@@ -8,7 +8,6 @@ O pdf.js é uma aplicação que, como temos vindo a referir, já se encontra bem
 
 ## Manutenção do pdf.js
 
-[TODO: falar da importância da manutenção no pdf.js (por ex., estar sempre a par com as evoluções do Mozilla Firefox). Comentar que por causa de o método usado ser o Agile, o software já está preparado para a evolução/mudança.]
 A manutenção no pdf.js é uma vertente particularmente importante, dado que os ficheiros pdf estão em constante mudança, tal como os browsers. Desta forma, é necessário estar sempre a par dessas alterações e atualizar o programa para que seja possível continuar a funcionar a um nível razoável.
 O facto de o método de desenvolvimento de software que está a ser usado ser o ágil, torna este processo de adaptação muito mais fácil. Este modelo adequa-se na perfeição com o projeto, pois lida muito bem com todas as mudanças necessárias.
 O maior desafio em termos evolutivos, é conseguir que o pdf.js funcione nos browsers mais utilizados, para que este programa possa ser utilizado por praticamente todas as pessoas.
