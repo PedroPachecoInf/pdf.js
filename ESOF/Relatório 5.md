@@ -21,33 +21,43 @@ Novas funcionalidades são propostas maioritariamente pelos utilizadores, como u
 ### Análise métrica do *Better Code Hub*
 
 ![Write Short Units of Code](./Relatório 5/BCH-ShortUnits.png)
+Como podemos ver na linha colorida (mostrada na imagem acima), o PDF.js falha redondamente nesta categoria pela falta de divisão do código. Esta falha dificulta novos contribuidores a compreender o código, bem como a reutilização e testabilidade do código.
 
 
 ![Write Simple Units of Code](./Relatório 5/BCH-SimpleUnits.png)
+Verifica-se nesta *guideline* um problema semelhante ao anterior: código com demasiada complexidade. Tanto os problemas que advém como as soluções, são semelhantes à *guideline* anterior.
 
 
 ![Write Code Once](./Relatório 5/BCH-CodeOnce.png)
+Neste aspeto, o PDF.js não apresenta problemas já que não há muito código duplicado.
 
 
 ![Keep Unit Interfaces Small](./Relatório 5/BCH-InterfacesSmall.png)
+Apesar de o código não passar nesta *guideline*, o resultado não é tão mau como em pontos anteriores nem a mudança é tão difícil, pois seria facilmente resolvido com o agrupamento de argumentos num só objeto.
 
 
 ![Separate Concerns in Modules](./Relatório 5/BCH-SeparateConcerns.png)
+Podemos ver na imagem acima que a separação dos *concerns* dos módulos está perto de ser aceitável, apesar de ainda ter alguns módulos um pouco sobrecarregados.
 
 
 ![Couple Architecture Components Loosely](./Relatório 5/BCH-CompsLoosely.png)
+Esta *guideline* tem como propósito analizar a independência dos *components*, algo que podemos concluir que ainda é preciso ser melhorar, de modo a que tornar os próprios *components* mais flexivéis.
 
 
 ![Keep Architecture Components Balanced](./Relatório 5/BCH-CompsBalanced.png)
+A relação entre os pesos dos *components* está relativamente equilibrada, pois ainda que o *component* *src* esteja bem mais pesado que os restantes, o equílibrio entre estes mesmos restantes é o suficiente para apssar nesta *guideline*.
 
 
 ![Keep Your Codebase Small](./Relatório 5/BCH-CodebaseSmall.png)
+Podemos verificar que o PDF.js passa facilmente nesta *guideline*, o que significa que não terá problemas relativos a manutenção de código.
 
 
 ![Automate Tests](./Relatório 5/BCH-AutomateTests.png)
+Como já foi visto no relatório anterior a cobertura dos testes deixa um pouco a desejar, consequência dos dados mostrados acima que ilustram que a quantidade de testes deveria ser bem mais elevada (pelo menos para o triplo).
 
 
 ![Write Clean Code](./Relatório 5/BCH-CleanCode.png)
+Graças a um cuidado muito apertado por parte da equipa da Mozilla e pela utilização de um [*Style Guide*](https://github.com/mozilla/pdf.js/wiki/Style-Guide), o código consegue manter-se sempre bastante limpo e sem *smells*.
 
 
 
