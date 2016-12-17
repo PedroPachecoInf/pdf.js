@@ -4,12 +4,14 @@
 
 ## Introdução
 
-O pdf.js é uma aplicação que, como temos vindo a referir, já se encontra bem maturada. Com um período de desenvolvimento de mais de 4 anos e um âmbito de funcionalidades muito restrito, são muito poucos os *features* que podem ser adicionados a este leitor. No entanto, o projeto continua aberto ao desenvolvimento de novas funcionalidades, que são sobretudo pressionadas pela evolução das plataformas suportadas pelo leitor.
+O pdf.js é uma aplicação que, como temos vindo a referir, já se encontra bem maturada. Com um período de desenvolvimento de mais de 4 anos e um âmbito de funcionalidades muito restrito, são muito poucos os *features* que podem ser adicionados a este leitor. No entanto, o projeto continua aberto ao desenvolvimento de novas funcionalidades, que são sobretudo pressionadas pela evolução das plataformas suportadas pelo leitor. Contudo, iremos apresentar uma possível implementação de uma *feature*, que corresponde à correção de um *bug* que impossibilita a vizualização de alguns ficheiros pdf.
 
 ## Manutenção do pdf.js
 
 [TODO: falar da importância da manutenção no pdf.js (por ex., estar sempre a par com as evoluções do Mozilla Firefox). Comentar que por causa de o método usado ser o Agile, o software já está preparado para a evolução/mudança.]
-
+A manutenção no pdf.js é uma vertente particularmente importante, dado que os ficheiros pdf estão em constante mudança, tal como os browsers. Desta forma, é necessário estar sempre a par dessas alterações e atualizar o programa para que seja possível continuar a funcionar a um nível razoável.
+O facto de o método de desenvolvimento de software que está a ser usado ser o ágil, torna este processo de adaptação muito mais fácil. Este modelo adequa-se na perfeição com o projeto, pois lida muito bem com todas as mudanças necessárias.
+O maior desafio em termos evolutivos, é conseguir que o pdf.js funcione nos browsers mais utilizados, para que este programa possa ser utilizado por praticamente todas as pessoas.
 ### Implementação de alterações
 
 [TODO: ver slides 10 e 11 da evolução de software e falar do processo de implementação de alterações] Temporario, depois acabo
