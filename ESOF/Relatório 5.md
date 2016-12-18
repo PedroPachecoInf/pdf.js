@@ -13,7 +13,7 @@ O facto de o método de desenvolvimento de software que está a ser usado ser o 
 O maior desafio em termos evolutivos, é conseguir que o pdf.js funcione nos browsers mais utilizados, para que este programa possa ser utilizado por praticamente todas as pessoas.
 ### Implementação de alterações
 
-O pdf.js aproxima-se rapidamente das fases finais do desenvolvimento. Atualmente, o projecto encontra-se numa fase relatimente estável, na qual a maioria das funcionalidades propostas estão relacionadas com interface entre o programa e o utilizador. O mesmo não se pode dizer relatimente aos *bugs* que são a principal fonte de alterações no pdf.js.
+O pdf.js aproxima-se rapidamente das fases finais do desenvolvimento. Atualmente, o projecto encontra-se numa fase estável, na qual a maioria das funcionalidades propostas estão relacionadas com interface entre o programa e o utilizador. O mesmo não se pode dizer relativamente aos *bugs* que são a principal fonte de alterações no pdf.js.
 
 Devido a isto o pdf.js conta com mais de quinhentas *issues* abertas, muitas das quais ainda não tem resolução em vista. Apesar de maturo, o projecto está longe de adotar as mudanças necessárias para acompanhar o constante aparecimento de novos requisitos, sejam eles originados dos *bugs* ou de funcionalidades propostas.
 
