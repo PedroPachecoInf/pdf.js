@@ -13,11 +13,11 @@ O facto de o método de desenvolvimento de software que está a ser usado ser o 
 O maior desafio em termos evolutivos, é conseguir que o pdf.js funcione nos browsers mais utilizados, para que este programa possa ser utilizado por praticamente todas as pessoas.
 ### Implementação de alterações
 
-[TODO: ver slides 10 e 11 da evolução de software e falar do processo de implementação de alterações] Temporario, depois acabo
-O pdf.js, apesar de funcional, está longe de alcançar as fases finais do desenvolvimento, encontrando-se numa fase de evolução com o constante aparecimento de novos requesitos, e consequentemente, novas funcionalidades.
+O pdf.js aproxima-se rapidamente das fases finais do desenvolvimento. Atualmente, o projecto encontra-se numa fase relatimente estável, na qual a maioria das funcionalidades propostas estão relacionadas com interface entre o programa e o utilizador. O mesmo não se pode dizer relatimente aos *bugs* que são a principal fonte de alterações no pdf.js.
 
-Novas funcionalidades são propostas maioritariamente pelos utilizadores, como uma *issue*. A equipa responsável pelo projecto trata de analisar a *user history*, tentando expor informação útil para quem for resolver o problema. Sendo um projecto open-source, isto permite que a comunidade ajude no desenvolvivento das funcionalidades.
+Devido a isto o pdf.js conta com mais de quinhentas *issues* abertas, muitas das quais ainda não tem resolução em vista. Apesar de maturo, o projecto está longe de adotar as mudanças necessárias para acompanhar o constante aparecimento de novos requisitos, sejam eles originados dos *bugs* ou de funcionalidades propostas.
 
+O processo de implementação de alterações começa com as propostas dos utilizadores.  A equipa responsável pelo projecto trata de analisar a *user history*, tentando expor informação útil para quem for resolver o problema. De forma a aproveitar o facto de o projecto ser *open-source*, a *issue* é deixada aberta para que a comunidade possa propor soluções. Estas soluções são analisadas pela equipa responsável pelo projecto, e testasdas com uma beteria de testes unitárias, com o intuito de impedir novos problemas devido a regressões no código. Quando o projecto alcança um momento relatimente estável é lançada uma nova versão que tem implementadas as novas altereções.
 
 ### Análise métrica do *Better Code Hub*
 
